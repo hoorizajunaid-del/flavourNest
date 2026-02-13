@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pakistani Food Recipes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #006400 !important; /* Dark green */
+    }
+    .navbar-brand {
+      font-weight: 800;
+      color: #fff !important;
+    }
+    .nav-link {
+      color: #c0ffc0 !important;
+    }
+    .nav-link:hover {
+      color: #ffd700 !important; /* gold on hover */
+    }
+
+    /* Hero */
+    .hero-section {
+      height: 60vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("images/biryani.png"); /* Pakistani food hero image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+    }
+
+    /* Section titles */
+    h2 {
+      font-weight: 800;
+      color: #006400;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* Recipe Cards */
+    .recipe-card {
+      background: #ffffff;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      height: 100%;
+    }
+    .recipe-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(0,100,0,0.3);
+    }
+    .recipe-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .recipe-card h5 {
+      color: #228B22; /* forest green */
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .recipe-card strong {
+      color: #006400;
+    }
+    .recipe-card ul {
+      padding-left: 18px;
+      margin-bottom: 8px;
+    }
+    .recipe-card p {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">FlavourNest</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#breakfast">Breakfast</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lunch">Lunch</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dinner">Dinner</a></li>
+        <li class="nav-item"><a class="nav-link" href="#snacks">Snacks</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div>
+    <h1>Flavors of Pakistan</h1>
+    <p>Authentic Pakistani recipes from breakfast to snacks</p>
+  </div>
+</section>
+
+<div class="container my-5">
+
+  <!-- ================= BREAKFAST ================= -->
+  <h2 id="breakfast">Pakistani Breakfast</h2>
+  <div class="row g-4">
+
+    <!-- HALWA PURI -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+      <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/VMCj22_SewE?si=e_2aTG7IASrY3e1r"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Halwa Puri</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Semolina</li>
+          <li>Flour</li>
+          <li>Ghee</li>
+          <li>Sugar</li>
+          <li>Spices (cardamom, nutmeg)</li>
+          <li>Oil for frying puris</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Prepare sweet semolina halwa by roasting semolina with ghee, adding sugar and spices. Roll puris and deep fry. Serve hot with halwa and spicy curry.</p>
+      </div>
+    </div>
+
+    <!-- CHANA CHAT -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+   <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/kzAeKjGy1Co?si=fVBrfW2eMly6gDrA"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Chana Chaat</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Boiled chickpeas</li>
+          <li>Chopped onions</li>
+          <li>Tomatoes</li>
+          <li>Green chilies</li>
+          <li>Tamarind chutney</li>
+          <li>Lemon juice</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Mix all ingredients in a bowl. Adjust seasoning with salt and chaat masala. Serve chilled as breakfast or snack.</p>
+      </div>
+    </div>
+
+    <!-- PAKORA -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+      <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/ref4lsPJ_r4?si=pqWv8uXu1K93VLqe"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Pakora</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Chickpea flour</li>
+          <li>Potatoes / Spinach / Onion</li>
+          <li>Spices (red chili, turmeric)</li>
+          <li>Water</li>
+          <li>Oil for frying</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Mix flour with water and spices to make batter. Dip vegetables and deep fry until golden. Serve with chutney or ketchup.</p>
+      </div>
+    </div>
+
+    <!-- HALWA CHANA -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+<iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/VMCj22_SewE?si=cLDT5w1tgK6sOvBj"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Halwa Chana</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Chickpeas</li>
+          <li>Ghee</li>
+          <li>Sugar</li>
+          <li>Cardamom</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Boil chickpeas, fry in ghee, add sugar and cardamom, and simmer until thick. Serve warm as breakfast delight.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= LUNCH ================= -->
+  <h2 id="lunch">Pakistani Lunch</h2>
+  <div class="row g-4">
+
+    <!-- BIRYANI -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/GZm7cmKK1bk?si=9r1v0qPjf_qAOfdE"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Chicken Biryani</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Basmati rice</li>
+          <li>Chicken pieces</li>
+          <li>Yogurt</li>
+          <li>Spices (garam masala, turmeric, chili, coriander)</li>
+          <li>Onions, tomatoes</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Marinate chicken with yogurt and spices. Fry onions and tomatoes, cook chicken. Layer with boiled rice and steam on low heat. Serve with raita.</p>
+      </div>
+    </div>
+
+    <!-- NIHARI -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+<iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/1Kd3mhopYaE?si=q7M6c8_o_8qm0mAD"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Nihari</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Beef shank</li>
+          <li>Ginger-garlic paste</li>
+          <li>Onions</li>
+          <li>Spices (cumin, fennel, chili)</li>
+          <li>Flour (for thickening)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Cook beef with spices on low heat overnight. Mix flour with water to thicken. Serve hot with naan or steamed rice.</p>
+      </div>
+    </div>
+
+    <!-- DAAL CHAWAL -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+  <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/rxggi5gBJng?si=3R464yAa7n2ozw8C"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Daal Chawal</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Red lentils</li>
+          <li>Onion, garlic</li>
+          <li>Tomatoes</li>
+          <li>Spices (turmeric, chili powder, cumin)</li>
+          <li>Rice</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Cook lentils with onions, tomatoes, and spices. Serve hot with steamed rice and pickle on the side.</p>
+      </div>
+    </div>
+
+    <!-- SEEKH KEBAB -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+  <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/ov13Yr3MLCQ?si=R-9nP_2ZO5Q64kib"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Seekh Kebab</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Minced beef or chicken</li>
+          <li>Onion, garlic, ginger</li>
+          <li>Spices (cumin, coriander, chili, garam masala)</li>
+          <li>Skewers</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Mix minced meat with spices and shape on skewers. Grill or pan fry until cooked. Serve hot with naan and chutney.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= DINNER ================= -->
+  <h2 id="dinner">Pakistani Dinner</h2>
+  <div class="row g-4">
+
+    <!-- KARAHI CHICKEN -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+      <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/3d6DrdOEuY4?si=G99nqEghvimRaast"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Chicken Karahi</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Chicken pieces</li>
+          <li>Tomatoes</li>
+          <li>Green chilies</li>
+          <li>Garlic, ginger</li>
+          <li>Spices (red chili, coriander, cumin)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Fry chicken with garlic, ginger, and spices. Add tomatoes and cook until oil separates. Garnish with fresh coriander and serve hot.</p>
+      </div>
+    </div>
+
+    <!-- BEEF KORMA -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+   <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/y2EES8_Nl-Y?si=8IWn0bUbLqmJe_ep"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Beef Korma</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Beef cubes</li>
+          <li>Yogurt</li>
+          <li>Onions</li>
+          <li>Garlic, ginger</li>
+          <li>Spices (cardamom, cinnamon, cumin, chili)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Cook beef slowly in a yogurt-spice mixture until tender. Fry onions separately and mix in. Serve hot with naan or rice.</p>
+      </div>
+    </div>
+
+    <!-- BEEF BUNNI -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+<iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/Y28v_6xe3Qk?si=schIGKzGXM2Y-ouK"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Beef Bunni</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Minced beef</li>
+          <li>Onion, garlic, ginger</li>
+          <li>Spices (garam masala, chili powder)</li>
+          <li>Tomatoes</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Cook minced beef with spices, onions, garlic, and tomatoes. Simmer until thickened. Serve hot with naan.</p>
+      </div>
+    </div>
+
+    <!-- SAAG & MAKA -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/7aMYiEtQ3k8?si=dBRc5NdbbgWACdFn"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Saag & Makki</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Spinach & mustard greens</li>
+          <li>Maize flour</li>
+          <li>Ghee</li>
+          <li>Garlic</li>
+          <li>Chili</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Cook greens until soft, blend and simmer with ghee and spices. Serve hot with maize flatbreads (makki ki roti).</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= SNACKS ================= -->
+  <h2 id="snacks">Pakistani Snacks</h2>
+  <div class="row g-4">
+
+    <!-- PANI PURI -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+      <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/f8fXZ2ZRzrc?si=jfDFMplYDaOyDQNN"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Pani Puri</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Semolina or wheat flour puris</li>
+          <li>Boiled potatoes</li>
+          <li>Boiled chickpeas</li>
+          <li>Tamarind chutney</li>
+          <li>Spiced mint water</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Fill puris with potato-chickpea mixture. Dip in spicy tamarind-mint water and serve immediately for a crunchy, tangy snack.</p>
+      </div>
+    </div>
+
+    <!-- CHAAT -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/KV3Nt3iAoY0?si=pFBhEtzEqsWK9he5"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Chaat</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Boiled chickpeas</li>
+          <li>Potatoes</li>
+          <li>Onions, tomatoes</li>
+          <li>Chutneys (tamarind, mint)</li>
+          <li>Chaat masala</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Mix all ingredients, sprinkle chaat masala, drizzle chutneys. Serve chilled for a tangy, spicy treat.</p>
+      </div>
+    </div>
+
+    <!-- SAMOSA -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+      <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/RWWkES72DRQ?si=xlLP_LxZRW1iOs5b"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Samosa</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Potatoes</li>
+          <li>Peas</li>
+          <li>Flour</li>
+          <li>Spices (cumin, chili, coriander)</li>
+          <li>Oil for frying</li>
+        </ul>
+
+        <strong>Method:</strong>
+        <p>Make dough, roll and stuff with spiced potato-pea mixture. Shape into triangles and deep fry until golden. Serve hot with chutney.</p>
+      </div>
+    </div>
+
+    <!-- PAKORA SNACK -->
+    <div class="col-md-6 col-lg-3">
+      <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/xgaVWsxzXx0?si=OPACZg1Dmu6amOBh"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        <h5>Pakora</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Chickpea flour</li>
+          <li>Potatoes / Spinach / Onion</li>
+          <li>Spices (red chili, turmeric)</li>
+          <li>Water</li>
+          <li>Oil for frying</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Mix flour with water and spices to make batter. Dip vegetables and deep fry until golden. Serve with chutney or ketchup.</p>
+      </div>
+    </div>
+
+  </div> <!-- end of Snacks row -->
+
+</div> <!-- end of container -->
+
+<!-- Footer -->
+<footer style="background:#006400; color:#fff; padding:40px 0; margin-top:40px;">
+  <div class="container text-center">
+    <h5>PakistaniKitchen 🇵🇰</h5>
+    <p>Discover the rich flavors of Pakistan. Recipes from all regions, from breakfast to snacks.</p>
+    <div class="my-3">
+      <a href="#" style="color:#ffd700; margin:0 10px; text-decoration:none;">Home</a>|
+      <a href="#breakfast" style="color:#ffd700; margin:0 10px; text-decoration:none;">Breakfast</a>|
+      <a href="#lunch" style="color:#ffd700; margin:0 10px; text-decoration:none;">Lunch</a>|
+      <a href="#dinner" style="color:#ffd700; margin:0 10px; text-decoration:none;">Dinner</a>|
+      <a href="#snacks" style="color:#ffd700; margin:0 10px; text-decoration:none;">Snacks</a>
+    </div>
+    <p style="font-size:0.9rem;">&copy; 2026 PakistaniKitchen. All Rights Reserved.</p>
+    <p style="font-size:0.9rem;">created by hooriza junaid</p>
+    <div>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png"/></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png"/></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png"/></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

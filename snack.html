@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International Snack Recipes - Radiant Theme</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+      background: linear-gradient(135deg, #fed6e3, #a8edea);
+      color: #5a4a42;
+      font-family: 'Poppins', sans-serif;
+      padding-top: 70px;
+    }
+
+    /* Navbar */
+    .navbar-custom {
+      background: linear-gradient(135deg, #a8edea, #fed6e3); /* soft pastel navbar */
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #5a4a42;
+      font-weight: 600;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #f48fb1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #6b4f4f;
+      font-weight: 700;
+      text-shadow: 1px 1px 5px rgba(255,255,255,0.6);
+    }
+
+    .recipe-card {
+      background: linear-gradient(145deg, #fffafa, #e8f5e9); /* soft cream & pastel green */
+      border-radius: 20px;
+      padding: 25px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      color: #5a4a42;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    }
+
+    .recipe-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #7b5e57;
+      text-shadow: 0.5px 0.5px 2px rgba(255,255,255,0.4);
+    }
+
+    .ingredients, .instructions {
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      color: #5a4a42;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .recipe-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">FlavourNest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color:#fff;">☰</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Snacks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Drinks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Desserts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Title -->
+  <h1>International Snack Recipes - Radiant Theme</h1>
+
+  <!-- Recipes Grid -->
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Snack 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Bruschetta (Italy)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Baguette slices, tomatoes, garlic, basil, olive oil, salt.</div>
+          <div class="instructions"><strong>Recipe:</strong> Toast bread, top with chopped tomato, basil, garlic, drizzle olive oil, serve.</div>
+        </div>
+      </div>
+
+      <!-- Snack 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Spring Rolls (China)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Spring roll wrappers, cabbage, carrot, soy sauce, oil.</div>
+          <div class="instructions"><strong>Recipe:</strong> Sauté veggies with soy sauce, fill wrappers, roll, deep fry until golden.</div>
+        </div>
+      </div>
+
+      <!-- Snack 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Samosa (India)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Pastry, potatoes, peas, spices, oil.</div>
+          <div class="instructions"><strong>Recipe:</strong> Fill pastry with spiced potatoes & peas, fold triangles, fry until golden.</div>
+        </div>
+      </div>
+
+      <!-- Snack 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Guacamole & Chips (Mexico)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Avocado, lime, onion, tomato, tortilla chips, salt.</div>
+          <div class="instructions"><strong>Recipe:</strong> Mash avocado with lime, onion, tomato, salt; serve with chips.</div>
+        </div>
+      </div>
+
+      <!-- Snack 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Falafel (Middle East)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Chickpeas, garlic, parsley, cumin, coriander, oil.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend chickpeas with spices, shape into balls, fry until crispy.</div>
+        </div>
+      </div>
+
+      <!-- Snack 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Mini Quiches (France)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Puff pastry, eggs, cream, cheese, spinach or bacon.</div>
+          <div class="instructions"><strong>Recipe:</strong> Fill pastry with egg mixture, bake at 180°C for 20 min.</div>
+        </div>
+      </div>
+
+      <!-- Snack 7 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Mozzarella Sticks (USA)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Mozzarella, breadcrumbs, eggs, oil, salt.</div>
+          <div class="instructions"><strong>Recipe:</strong> Coat cheese sticks with egg & breadcrumbs, freeze 30 min, deep fry until golden.</div>
+        </div>
+      </div>
+
+      <!-- Snack 8 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Empanadas (Argentina)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Pastry, beef/chicken, onion, bell pepper, spices.</div>
+          <div class="instructions"><strong>Recipe:</strong> Cook filling, stuff pastry, fold, bake or fry until golden.</div>
+        </div>
+      </div>
+
+      <!-- Snack 9 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Tempura Veggies (Japan)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Vegetables, tempura flour, ice water, oil, salt.</div>
+          <div class="instructions"><strong>Recipe:</strong> Dip veggies in tempura batter, deep fry until crispy, serve hot.</div>
+        </div>
+      </div>
+
+      <!-- Snack 10 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Stuffed Mushrooms (Italy)</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Mushrooms, cream cheese, garlic, herbs, breadcrumbs.</div>
+          <div class="instructions"><strong>Recipe:</strong> Stuff mushrooms with cheese mixture, sprinkle breadcrumbs, bake at 180°C for 15 min.</div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Banana Bread</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Bananas, flour, sugar, eggs, butter, baking soda.</div>
+          <div class="instructions"><strong>Recipe:</strong> Mash bananas, mix with other ingredients, bake at 180°C for 50 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Chocolate Chip Cookies</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Flour, sugar, butter, eggs, chocolate chips, baking powder.</div>
+          <div class="instructions"><strong>Recipe:</strong> Mix all ingredients, shape cookies, bake at 175°C for 12 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Blueberry Muffins</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Flour, sugar, butter, eggs, milk, blueberries, baking powder.</div>
+          <div class="instructions"><strong>Recipe:</strong> Fold blueberries into batter, pour into muffin cups, bake at 180°C for 25 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Cheese Croissants</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Puff pastry, cheese slices, egg wash.</div>
+          <div class="instructions"><strong>Recipe:</strong> Wrap cheese in pastry, brush with egg, bake at 200°C for 15-20 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Apple Pie</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Apples, sugar, cinnamon, butter, flour, pie crust.</div>
+          <div class="instructions"><strong>Recipe:</strong> Fill crust with apple mixture, cover top, bake at 180°C for 45 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Brownies</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Butter, chocolate, sugar, eggs, flour.</div>
+          <div class="instructions"><strong>Recipe:</strong> Melt chocolate & butter, mix other ingredients, bake at 180°C for 25 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 7 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Cinnamon Rolls</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Flour, sugar, butter, cinnamon, eggs, yeast.</div>
+          <div class="instructions"><strong>Recipe:</strong> Roll dough with cinnamon sugar, cut, bake at 180°C for 20-25 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 8 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Pumpkin Bread</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Pumpkin puree, flour, sugar, eggs, butter, baking soda.</div>
+          <div class="instructions"><strong>Recipe:</strong> Mix ingredients, pour into loaf pan, bake at 180°C for 50 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 9 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Lemon Drizzle Cake</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Flour, sugar, butter, eggs, lemon juice, zest, baking powder.</div>
+          <div class="instructions"><strong>Recipe:</strong> Mix batter, bake at 180°C for 30-35 min, drizzle lemon syrup on top.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 10 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Garlic Bread</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Baguette, butter, garlic, parsley.</div>
+          <div class="instructions"><strong>Recipe:</strong> Spread garlic butter on bread, bake at 200°C for 10-12 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 11 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Focaccia Bread</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Flour, yeast, water, olive oil, salt, rosemary.</div>
+          <div class="instructions"><strong>Recipe:</strong> Prepare dough, press into pan, top with olive oil & rosemary, bake at 200°C for 25 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 12 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Chocolate Cake</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Flour, cocoa powder, sugar, eggs, butter, baking powder.</div>
+          <div class="instructions"><strong>Recipe:</strong> Mix ingredients, pour into pan, bake at 180°C for 30-35 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 13 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Cheese Muffins</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Flour, eggs, milk, cheese, baking powder, butter.</div>
+          <div class="instructions"><strong>Recipe:</strong> Mix all, pour into muffin cups, bake at 180°C for 20-25 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 14 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Pecan Pie Bars</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Flour, butter, sugar, eggs, pecans, corn syrup.</div>
+          <div class="instructions"><strong>Recipe:</strong> Prepare crust, top with pecan filling, bake at 180°C for 25-30 min.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 15 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Carrot Cake</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Flour, sugar, eggs, grated carrots, butter, baking powder, cinnamon.</div>
+          <div class="instructions"><strong>Recipe:</strong> Mix ingredients, pour into pan, bake at 180°C for 35-40 min.</div>
+        </div>
+      </div>
+
+
+      <!-- Recipe 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Mint Mojito</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Mint leaves, lime, sugar, soda water, ice.</div>
+          <div class="instructions"><strong>Recipe:</strong> Muddle mint & lime with sugar, add ice & soda, stir well.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Sabudana Drink</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Sabudana pearls, water, sugar, cardamom.</div>
+          <div class="instructions"><strong>Recipe:</strong> Soak sabudana, blend with water, sugar & cardamom, serve chilled.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Cold Coffee</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Coffee powder, milk, sugar, ice, whipped cream.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend coffee, milk, sugar & ice, top with whipped cream.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Strawberry Smoothie</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Strawberries, yogurt, honey, milk, ice.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend all ingredients until smooth, serve chilled.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Mango Lassi</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Mango pulp, yogurt, sugar, cardamom, ice.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend mango, yogurt, sugar & cardamom until creamy, serve cold.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Pineapple Juice</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Pineapple, sugar, water, ice.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend pineapple with sugar & water, serve chilled.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 7 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Lemon Ginger Drink</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Lemon, ginger, honey, water, ice.</div>
+          <div class="instructions"><strong>Recipe:</strong> Mix lemon juice, grated ginger, honey & water, serve chilled.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 8 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Watermelon Juice</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Watermelon, sugar, lime, ice.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend watermelon with sugar & lime, serve chilled.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 9 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Strawberry Lemonade</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Strawberries, lemon, sugar, water, ice.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend strawberries & lemon juice, mix with sugar & water, serve chilled.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 10 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Orange Smoothie</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Orange, yogurt, honey, ice.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend all ingredients until smooth, serve cold.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 11 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Cucumber Mint Cooler</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Cucumber, mint leaves, lime, sugar, soda.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend cucumber & mint, mix with lime, sugar & soda, serve chilled.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 12 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Chocolate Milkshake</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Milk, chocolate syrup, ice cream, whipped cream.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend milk, chocolate syrup & ice cream, top with whipped cream.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 13 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Cold Matcha Latte</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Matcha powder, milk, ice, sugar.</div>
+          <div class="instructions"><strong>Recipe:</strong> Whisk matcha with sugar, add milk & ice, serve cold.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 14 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Pomegranate Juice</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Pomegranate seeds, water, sugar, ice.</div>
+          <div class="instructions"><strong>Recipe:</strong> Blend seeds with water & sugar, strain, serve chilled.</div>
+        </div>
+      </div>
+
+      <!-- Recipe 15 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="recipe-card">
+          <div class="recipe-title">Iced Tea</div>
+          <div class="ingredients"><strong>Ingredients:</strong> Tea bags, sugar, lemon, ice, mint.</div>
+          <div class="instructions"><strong>Recipe:</strong> Brew tea, add sugar & lemon, chill, serve with ice & mint.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 SnackWorld | All Rights Reserved | <a href="#" style="color: #e0f2f1; text-decoration: underline;">Privacy Policy</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

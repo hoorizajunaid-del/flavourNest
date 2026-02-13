@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>World Breakfast Recipes</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* ================= GLOBAL ================= */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #fff8f0, #ffeedd);
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+}
+.navbar-brand {
+    font-weight: 800;
+    color: white !important;
+}
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: #3b3b3b !important;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 60vh;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* ================= CARDS ================= */
+.recipe-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    height: 100%;
+}
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255,94,98,0.4);
+}
+.recipe-card h5 {
+    font-weight: 700;
+    color: #ff5e62;
+}
+.recipe-card ul {
+    padding-left: 18px;
+}
+.recipe-card p {
+    font-size: 0.95rem;
+}
+
+ footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  footer:hover {
+    background: linear-gradient(45deg, #feca57, #ff6b6b);
+    color: #fff;
+  }
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="#">   🍽️ FlavorNest</a>
+<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Recipes</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<h1> Most Famous Breakfasts Around The World 🍳</h1>
+<p>Start your day with flavors from every culture</p>
+</div>
+</section>
+
+<!-- RECIPES -->
+<div class="container my-5">
+<div class="row g-4">
+
+<!-- RECIPE TEMPLATE START -->
+<!-- 1 -->
+<div class="col-md-6 col-lg-4">
+<div class="recipe-card">
+<h5>1. American Pancakes (USA)</h5>
+<strong>Ingredients:</strong>
+<ul>
+<li>Flour</li><li>Milk</li><li>Eggs</li><li>Sugar</li><li>Baking powder</li>
+</ul>
+<strong>Method:</strong>
+<p>Mix dry ingredients separately. Whisk eggs and milk. Combine both mixtures. Cook on a greased pan until golden. Serve with maple syrup.</p>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col-md-6 col-lg-4">
+<div class="recipe-card">
+<h5>2. Full English Breakfast (UK)</h5>
+<strong>Ingredients:</strong>
+<ul>
+<li>Eggs</li><li>Sausages</li><li>Bacon</li><li>Beans</li><li>Toast</li>
+</ul>
+<strong>Method:</strong>
+<p>Fry sausages and bacon. Cook eggs as desired. Warm baked beans. Serve hot with buttered toast.</p>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col-md-6 col-lg-4">
+<div class="recipe-card">
+<h5>3. Croissant (France)</h5>
+<strong>Ingredients:</strong>
+<ul>
+<li>Flour</li><li>Butter</li><li>Milk</li><li>Yeast</li><li>Sugar</li>
+</ul>
+<strong>Method:</strong>
+<p>Prepare laminated dough with butter layers. Shape into crescents and bake until golden and flaky.</p>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col-md-6 col-lg-4">
+<div class="recipe-card">
+<h5>4. Shakshuka (Middle East)</h5>
+<strong>Ingredients:</strong>
+<ul>
+<li>Tomatoes</li><li>Eggs</li><li>Onion</li><li>Garlic</li><li>Spices</li>
+</ul>
+<strong>Method:</strong>
+<p>Cook tomatoes with onion and spices. Crack eggs into sauce and cook until set. Serve with bread.</p>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="col-md-6 col-lg-4">
+<div class="recipe-card">
+<h5>5. Paratha & Chai (Pakistan/India)</h5>
+<strong>Ingredients:</strong>
+<ul>
+<li>Flour</li><li>Water</li><li>Salt</li><li>Ghee</li>
+</ul>
+<strong>Method:</strong>
+<p>Knead dough. Roll and cook on pan with ghee. Serve hot with tea and yogurt.</p>
+</div>
+</div>
+
+<!-- Continue Automatically Pattern -->
+
+<!-- 6-30 (Shortened for readability but still complete names) -->
+
+<!-- 6 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>6. Spanish Omelette (Spain)</h5><strong>Ingredients:</strong><ul><li>Eggs</li><li>Potatoes</li><li>Onions</li></ul><strong>Method:</strong><p>Fry potatoes and onions. Add beaten eggs and cook until firm.</p></div></div>
+
+<!-- 7 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>7. Sushi Breakfast (Japan)</h5><strong>Ingredients:</strong><ul><li>Rice</li><li>Fish</li><li>Seaweed</li></ul><strong>Method:</strong><p>Prepare sushi rice. Add fish and roll tightly. Slice and serve.</p></div></div>
+
+<!-- 8 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>8. Dim Sum (China)</h5><strong>Ingredients:</strong><ul><li>Dumpling wrappers</li><li>Chicken</li><li>Vegetables</li></ul><strong>Method:</strong><p>Fill wrappers and steam until cooked.</p></div></div>
+
+<!-- 9 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>9. Bagel & Cream Cheese (USA)</h5><strong>Ingredients:</strong><ul><li>Bagel</li><li>Cream cheese</li></ul><strong>Method:</strong><p>Slice and toast bagel. Spread cream cheese generously.</p></div></div>
+
+<!-- 10 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>10. Avocado Toast (Australia)</h5><strong>Ingredients:</strong><ul><li>Bread</li><li>Avocado</li><li>Lemon</li></ul><strong>Method:</strong><p>Mash avocado with lemon. Spread over toasted bread.</p></div></div>
+
+<!-- 11 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>11. Huevos Rancheros (Mexico)</h5><strong>Ingredients:</strong><ul><li>Tortilla</li><li>Eggs</li><li>Salsa</li></ul><strong>Method:</strong><p>Fry eggs and serve over tortilla topped with salsa.</p></div></div>
+
+<!-- 12 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>12. Congee (China)</h5><strong>Ingredients:</strong><ul><li>Rice</li><li>Water</li><li>Chicken</li></ul><strong>Method:</strong><p>Cook rice with water until porridge consistency.</p></div></div>
+
+<!-- 13 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>13. Crepes (France)</h5><strong>Ingredients:</strong><ul><li>Flour</li><li>Milk</li><li>Eggs</li></ul><strong>Method:</strong><p>Make thin batter and cook lightly on pan.</p></div></div>
+
+<!-- 14 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>14. Idli & Sambar (India)</h5><strong>Ingredients:</strong><ul><li>Rice batter</li><li>Lentils</li></ul><strong>Method:</strong><p>Steam batter and serve with lentil soup.</p></div></div>
+
+<!-- 15 -->
+<div class="col-md-6 col-lg-4"><div class="recipe-card"><h5>15. Waffles (Belgium)</h5><strong>Ingredients:</strong><ul><li>Flour</li><li>Eggs</li><li>Milk</li></ul><strong>Method:</strong><p>Pour batter into waffle iron and cook until crispy.</p></div></div>
+
+<!-- 16-30 Continue Similar Pattern -->
+    <!-- French Toast Card -->
+    <div class="col-md-6 col-lg-4 fade-in">
+      <div class="recipe-card">
+
+        <h5>French Toast</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>4 slices thick bread (brioche or white)</li>
+          <li>2 eggs</li>
+          <li>½ cup milk</li>
+          <li>1 tbsp sugar</li>
+          <li>½ tsp cinnamon</li>
+          <li>1 tsp vanilla extract</li>
+          <li>Butter for frying</li>
+          <li>Maple syrup or honey</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Whisk eggs, milk, sugar, cinnamon, and vanilla. Dip bread slices and fry in butter until golden. Serve with syrup or fruits.</p>
+      </div>
+    </div>
+
+    <!-- Miso Soup Breakfast Card -->
+    <div class="col-md-6 col-lg-4 fade-in" style="animation-delay:0.3s;">
+      <div class="recipe-card">
+
+        <h5>Miso Soup Breakfast</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>2 cups water</li>
+          <li>1 tbsp miso paste</li>
+          <li>½ cup tofu cubes</li>
+          <li>1 tbsp chopped green onions</li>
+          <li>1 tsp wakame (seaweed)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Heat water, dissolve miso paste. Add tofu and seaweed. Simmer 2–3 mins. Garnish with green onions and serve warm.</p>
+      </div>
+    </div>
+
+    <!-- French Toast -->
+    <div class="col-md-6 col-lg-4 fade-in" id="french-toast">
+      <div class="recipe-card">
+
+        <h5>French Toast</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>4 slices thick bread (brioche or white bread)</li>
+          <li>2 eggs</li>
+          <li>½ cup milk</li>
+          <li>1 tbsp sugar</li>
+          <li>½ tsp cinnamon</li>
+          <li>1 tsp vanilla extract</li>
+          <li>Butter for frying</li>
+          <li>Maple syrup or honey</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Whisk eggs, milk, sugar, cinnamon, and vanilla. Dip bread slices. Fry in butter until golden. Serve hot with syrup or fruits.</p>
+      </div>
+    </div>
+
+    <!-- Breakfast Burrito -->
+    <div class="col-md-6 col-lg-4 fade-in" id="breakfast-burrito" style="animation-delay:0.1s;">
+      <div class="recipe-card">
+
+        <h5>Breakfast Burrito</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>2 flour tortillas</li>
+          <li>3 eggs</li>
+          <li>½ cup cooked sausage or chicken</li>
+          <li>¼ cup bell peppers</li>
+          <li>¼ cup onions</li>
+          <li>½ cup shredded cheese</li>
+          <li>Salt & pepper</li>
+          <li>Salsa (optional)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Scramble eggs. Cook veggies and meat. Warm tortillas. Add mixture, fold, grill lightly. Serve warm.</p>
+      </div>
+    </div>
+
+    <!-- Miso Soup -->
+    <div class="col-md-6 col-lg-4 fade-in" id="miso-soup" style="animation-delay:0.2s;">
+      <div class="recipe-card">
+
+        <h5>Miso Soup Breakfast</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>2 cups water</li>
+          <li>1 tbsp miso paste</li>
+          <li>½ cup tofu cubes</li>
+          <li>1 tbsp chopped green onions</li>
+          <li>1 tsp wakame</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Heat water. Dissolve miso paste. Add tofu & seaweed. Simmer 2–3 mins. Garnish with green onions.</p>
+      </div>
+    </div>
+
+    <!-- Smoothie Bowl -->
+    <div class="col-md-6 col-lg-4 fade-in" id="smoothie-bowl" style="animation-delay:0.3s;">
+      <div class="recipe-card">
+
+        <h5>Smoothie Bowl</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>1 frozen banana</li>
+          <li>½ cup frozen berries</li>
+          <li>½ cup yogurt or almond milk</li>
+          <li>Toppings: granola, chia seeds, fruits</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Blend banana, berries, and yogurt. Pour into bowl. Add toppings. Serve immediately.</p>
+      </div>
+    </div>
+
+    <!-- Granola & Yogurt -->
+    <div class="col-md-6 col-lg-4 fade-in" id="granola-yogurt" style="animation-delay:0.4s;">
+      <div class="recipe-card">
+
+        <h5>Granola & Yogurt</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>1 cup yogurt</li>
+          <li>½ cup granola</li>
+          <li>Fresh fruits</li>
+          <li>Honey (optional)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Layer yogurt, granola, and fruits in a bowl. Drizzle honey. Serve chilled.</p>
+      </div>
+    </div>
+
+    <!-- Turkish Breakfast -->
+    <div class="col-md-6 col-lg-4 fade-in" id="turkish-breakfast" style="animation-delay:0.5s;">
+      <div class="recipe-card">
+
+        <h5>Turkish Breakfast</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Eggs</li>
+          <li>Olives</li>
+          <li>Tomatoes & cucumbers</li>
+          <li>Feta cheese</li>
+          <li>Bread</li>
+          <li>Honey & butter</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Fry or boil eggs. Arrange olives, cheese, and veggies. Serve with bread, honey, and butter. Enjoy Turkish tea.</p>
+      </div>
+    </div>
+<!-- Brazilian Pão de Queijo -->
+<div class="col-md-6 col-lg-4 fade-in" id="pao-de-queijo" style="animation-delay:0.6s;">
+  <div class="recipe-card">
+    <h5>Brazilian Pão de Queijo</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>1 cup tapioca flour</li>
+      <li>½ cup milk</li>
+      <li>¼ cup oil</li>
+      <li>1 egg</li>
+      <li>½ cup grated cheese</li>
+      <li>Salt</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Heat milk and oil. Mix flour, salt, and cheese. Add egg and milk mixture. Shape small balls. Bake at 180°C for 15–20 minutes. Serve warm.</p>
+  </div>
+</div>
+
+<!-- German Brötchen -->
+<div class="col-md-6 col-lg-4 fade-in" id="broetchen" style="animation-delay:0.7s;">
+  <div class="recipe-card">
+    <h5>German Brötchen</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>3 cups flour</li>
+      <li>1 tsp yeast</li>
+      <li>1 tsp sugar</li>
+      <li>1 tsp salt</li>
+      <li>1 cup warm water</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Mix yeast, sugar, and water. Add flour and salt. Knead and let rise 1 hour. Shape rolls and bake at 200°C for 20 minutes. Serve with butter and jam.</p>
+  </div>
+</div>
+
+<!-- Nigerian Akara -->
+<div class="col-md-6 col-lg-4 fade-in" id="akara" style="animation-delay:0.8s;">
+  <div class="recipe-card">
+    <h5>Nigerian Akara</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>1 cup black-eyed peas (soaked & peeled)</li>
+      <li>1 onion</li>
+      <li>1 chili</li>
+      <li>Salt</li>
+      <li>Oil for frying</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Blend peas, onion, chili, and salt. Whisk mixture to add air. Deep fry spoonfuls until golden. Serve hot.</p>
+  </div>
+</div>
+
+<!-- Ethiopian Injera -->
+<div class="col-md-6 col-lg-4 fade-in" id="injera" style="animation-delay:0.9s;">
+  <div class="recipe-card">
+    <h5>Ethiopian Injera</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>2 cups teff flour</li>
+      <li>2½ cups water</li>
+      <li>Salt</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Mix flour and water. Ferment 1–2 days. Pour batter on hot pan in circular motion. Cook without flipping. Serve with stews.</p>
+  </div>
+</div>
+
+<!-- Russian Syrniki -->
+<div class="col-md-6 col-lg-4 fade-in" id="syrniki" style="animation-delay:1s;">
+  <div class="recipe-card">
+    <h5>Russian Syrniki</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>1 cup cottage cheese</li>
+      <li>1 egg</li>
+      <li>3 tbsp flour</li>
+      <li>2 tbsp sugar</li>
+      <li>Oil for frying</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Mix all ingredients. Shape small patties. Fry until golden on both sides. Serve with sour cream or jam.</p>
+  </div>
+</div>
+
+<!-- Canadian Poutine Breakfast -->
+<div class="col-md-6 col-lg-4 fade-in" id="poutine" style="animation-delay:1.1s;">
+  <div class="recipe-card">
+    <h5>Canadian Poutine Breakfast</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>French fries</li>
+      <li>Cheese curds</li>
+      <li>Gravy</li>
+      <li>Fried egg</li>
+      <li>Bacon</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Cook fries. Add cheese curds. Pour hot gravy. Top with fried egg and bacon. Serve hot.</p>
+  </div>
+</div>
+
+<!-- Korean Gyeran Bap -->
+<div class="col-md-6 col-lg-4 fade-in" id="gyeran-bap" style="animation-delay:1.2s;">
+  <div class="recipe-card">
+    <h5>Korean Gyeran Bap</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>1 bowl steamed rice</li>
+      <li>1 egg</li>
+      <li>1 tbsp soy sauce</li>
+      <li>1 tsp sesame oil</li>
+      <li>Green onions</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Fry egg sunny side up. Place over hot rice. Add soy sauce and sesame oil. Mix and enjoy.</p>
+  </div>
+</div>
+
+<!-- Thai Jok -->
+<div class="col-md-6 col-lg-4 fade-in" id="thai-jok" style="animation-delay:1.3s;">
+  <div class="recipe-card">
+    <h5>Thai Jok</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>1 cup rice</li>
+      <li>4 cups water</li>
+      <li>½ cup minced pork</li>
+      <li>Garlic</li>
+      <li>Soy sauce</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Cook rice with water until very soft. Add pork and garlic. Season with soy sauce. Serve hot.</p>
+  </div>
+</div>
+
+<!-- Italian Frittata -->
+<div class="col-md-6 col-lg-4 fade-in" id="frittata" style="animation-delay:1.4s;">
+  <div class="recipe-card">
+    <h5>Italian Frittata</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>6 eggs</li>
+      <li>½ cup vegetables (spinach, peppers)</li>
+      <li>½ cup cheese</li>
+      <li>Olive oil</li>
+      <li>Salt & pepper</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Beat eggs with salt and pepper. Cook vegetables. Pour eggs over vegetables. Cook on low until set. Finish in oven 5 minutes. Slice and serve.</p>
+  </div>
+</div>
+
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-1">© 2026 All Rights Reserved</p>
+    <p class="mb-0">Created by <strong>Hooriza Junaid</strong></p>
+  </div>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

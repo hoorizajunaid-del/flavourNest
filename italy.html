@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Italian Food Recipes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+      background:#fff6ee;
+      font-family:'Segoe UI',sans-serif;
+    }
+
+    /* Navbar */
+    .navbar{
+      background:#7b1e1e !important;
+    }
+    .navbar-brand{
+      font-weight:800;
+      color:#fff !important;
+    }
+    .nav-link{
+      color:#ffe6d5 !important;
+    }
+    .nav-link:hover{
+      color:#f4a261 !important;
+    }
+
+    /* Hero */
+    .hero-section{
+      height:75vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+        url("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe");
+      background-size:cover;
+      background-position:center;
+      color:#fff;
+      display:flex;
+      align-items:center;
+    }
+
+    .hero-section h1{
+      font-size:3.2rem;
+      font-weight:900;
+      color:#fff;
+    }
+
+    /* Section title */
+    h2{
+      font-weight:800;
+      color:#7b1e1e;
+    }
+
+    /* Recipe Card */
+    .recipe-card{
+      background:#ffffff;
+      padding:18px;
+      border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.1);
+      transition:0.3s;
+      height:100%;
+    }
+
+    .recipe-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 18px 40px rgba(176,58,46,0.35);
+    }
+
+    .recipe-card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:12px;
+    }
+
+    .recipe-card h5{
+      color:#b03a2e;
+      font-weight:800;
+    }
+
+    strong{
+      color:#7b1e1e;
+    }
+
+    ul{
+      padding-left:18px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">FlavourNest </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#desserts">Desserts</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pasta">Pasta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dinner">Dinner</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-section text-center">
+  <div class="container">
+    <h1>Authentic Italian Recipes</h1>
+    <p>Classic flavors from Italy 🇮🇹</p>
+  </div>
+</section>
+
+<div class="container my-5">
+
+<!-- ================= DESSERTS ================= -->
+<h2 id="desserts" class="text-center mb-4">Italian Desserts</h2>
+<div class="row g-4">
+
+  <!-- TIRAMISU -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/y8wsRxt0xf4?si=PMjNBDsQtTXxnRvb"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Tiramisu</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Mascarpone cheese</li>
+        <li>Eggs</li>
+        <li>Sugar</li>
+        <li>Espresso coffee</li>
+        <li>Ladyfinger biscuits</li>
+        <li>Cocoa powder</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Whisk egg yolks with sugar, fold in mascarpone. Dip biscuits in coffee, layer with cream. Dust cocoa on top. Chill 4 hours.</p>
+    </div>
+  </div>
+
+  <!-- PANNA COTTA -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/84k4pbJPpjc?si=1BwaCN0wwdfoba2v"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Panna Cotta</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Heavy cream</li>
+        <li>Sugar</li>
+        <li>Vanilla</li>
+        <li>Gelatin</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Heat cream with sugar and vanilla. Add gelatin. Pour into molds and refrigerate until set.</p>
+    </div>
+  </div>
+
+  <!-- CANNOLI -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+        <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/n4Glui1wRXg?si=0Hv6IVCGy-4n62ld"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Cannoli</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Cannoli shells</li>
+        <li>Ricotta cheese</li>
+        <li>Powdered sugar</li>
+        <li>Chocolate chips</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Mix ricotta with sugar and chocolate chips. Fill shells just before serving and dust with powdered sugar.</p>
+    </div>
+  </div>
+
+  <!-- GELATO -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <iframe
+  width="100%"
+  height="400"
+ src="https://youtu.be/embed/tNmpM-Q_qJM?si=Psu1xebcuMZE_t0a"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Gelato</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Milk</li>
+        <li>Sugar</li>
+        <li>Egg yolks</li>
+        <li>Flavoring (chocolate, vanilla, pistachio)</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Heat milk and sugar, temper yolks, cook until thick. Add flavor. Freeze while stirring occasionally until creamy.</p>
+    </div>
+  </div>
+
+  <!-- BISCOTTI -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+        <iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/Ro3vi3Q17nU?si=U4JI9URuYnh0-5JC"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Biscotti</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Flour</li>
+        <li>Sugar</li>
+        <li>Eggs</li>
+        <li>Almonds</li>
+        <li>Baking powder</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Mix all ingredients into dough. Shape into logs, bake. Slice logs, bake again until crisp.</p>
+    </div>
+  </div>
+
+  <!-- ZABAGLIONE -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+        <iframe
+  width="100%"
+  height="400"
+ src="https://youtu.be/embed/894Yj4MihfU?si=jcMHXZC7jebCvxL7"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Zabaglione</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Egg yolks</li>
+        <li>Sugar</li>
+        <li>Sweet Marsala wine</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Whisk egg yolks and sugar over simmering water. Slowly add Marsala. Whisk until thick and frothy. Serve warm.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= PASTA ================= -->
+<h2 id="pasta" class="text-center mt-5 mb-4">Italian Pasta</h2>
+<div class="row g-4">
+
+  <!-- SPAGHETTI CARBONARA -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+        <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/HW2SoMJToIo?si=bqt61R4w-ObnXrCG"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Spaghetti Carbonara</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Spaghetti</li>
+        <li>Egg yolks</li>
+        <li>Pecorino cheese</li>
+        <li>Pancetta</li>
+        <li>Black pepper</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Cook pasta. Fry pancetta. Mix eggs and cheese. Combine everything off heat for creamy sauce. Serve hot.</p>
+    </div>
+  </div>
+
+  <!-- LASAGNA -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/BDFaPIZso68?si=waBqjp5M8tQbnWUE"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Lasagna</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Lasagna sheets</li>
+        <li>Ground beef</li>
+        <li>Tomato sauce</li>
+        <li>Ricotta cheese</li>
+        <li>Mozzarella cheese</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Layer pasta, meat sauce, ricotta, and mozzarella. Bake until golden and bubbly. Serve warm.</p>
+    </div>
+  </div>
+
+  <!-- PESTO PASTA -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+        <iframe
+  width="100%"
+  height="400"
+ src="https://youtu.be/embed/p7edUxCLOGw?si=sb9EftvsmIn6gfiH"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Pesto Pasta</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Pasta of choice</li>
+        <li>Basil leaves</li>
+        <li>Pine nuts</li>
+        <li>Parmesan cheese</li>
+        <li>Olive oil</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Blend basil, pine nuts, parmesan, and olive oil. Toss with cooked pasta and serve immediately.</p>
+    </div>
+  </div>
+<!-- ================= DINNER ================= -->
+<h2 id="dinner" class="text-center mt-5 mb-4">Italian Dinner</h2>
+<div class="row g-4">
+
+  <!-- CHICKEN PARMIGIANA -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://youtu.be/embed/WI_ut7dTRQ8?si=uTLWpGPQjjKcsGwq"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Chicken Parmigiana</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Chicken breasts</li>
+        <li>Bread crumbs</li>
+        <li>Parmesan cheese</li>
+        <li>Tomato sauce</li>
+        <li>Mozzarella cheese</li>
+        <li>Olive oil</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Bread and fry chicken breasts. Place in baking dish, top with tomato sauce and mozzarella. Bake 20 minutes until cheese melts.</p>
+    </div>
+  </div>
+
+  <!-- RISOTTO AI FUNGHI -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+        <iframe
+  width="100%"
+  height="400"
+ src="https://youtu.be/embed/NKtR3KpS83w?si=7UxsJ-wfizMILmaC"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Risotto ai Funghi</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Arborio rice</li>
+        <li>Mushrooms</li>
+        <li>Onion</li>
+        <li>Vegetable broth</li>
+        <li>Parmesan cheese</li>
+        <li>Butter</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Sauté onions and mushrooms in butter. Add rice, gradually add broth until creamy. Finish with Parmesan cheese and serve warm.</p>
+    </div>
+  </div>
+
+  <!-- EGGPLANT PARMESAN -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://youtu.be/embed/rLZsKI8dcvo?si=6piazMH2zudGQsDs"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Eggplant Parmesan</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Eggplant slices</li>
+        <li>Bread crumbs</li>
+        <li>Tomato sauce</li>
+        <li>Mozzarella cheese</li>
+        <li>Parmesan cheese</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Bread and fry eggplant slices. Layer with tomato sauce and cheese in a baking dish. Bake 25-30 minutes until golden.</p>
+    </div>
+  </div>
+
+  <!-- MUSHROOM LASAGNA -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <iframe
+  width="100%"
+  height="400"
+ src="https://youtu.be/embed/hR97iwz_sbg?si=GGSuA6aPf5wzHTX2"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Mushroom Lasagna</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Lasagna sheets</li>
+        <li>Mushrooms</li>
+        <li>Ricotta cheese</li>
+        <li>Mozzarella cheese</li>
+        <li>Bechamel sauce</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Layer pasta sheets, mushroom mixture, ricotta, mozzarella, and béchamel sauce. Bake 30 minutes until bubbling.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= SNACKS ================= -->
+<h2 id="snacks" class="text-center mt-5 mb-4">Italian Snacks</h2>
+<div class="row g-4">
+
+  <!-- BRUSCHETTA -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+        <iframe
+  width="100%"
+  height="400"
+ src="https://youtu.be/embed/Q3xg35pcLyo?si=HTCZUKgI6hplCw4U"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Bruschetta</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Bread slices</li>
+        <li>Tomatoes</li>
+        <li>Garlic</li>
+        <li>Basil</li>
+        <li>Olive oil</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Toast bread slices. Top with diced tomatoes, garlic, basil, and drizzle olive oil. Serve immediately.</p>
+    </div>
+  </div>
+
+  <!-- CAPRESE SKEWERS -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+        <iframe
+  width="100%"
+  height="400"
+ src="https://youtu.be/embed/gOcfUgd4ekA?si=bUg52a3qpuzaogyw"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Caprese Skewers</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Cherry tomatoes</li>
+        <li>Mozzarella balls</li>
+        <li>Fresh basil</li>
+        <li>Balsamic glaze</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Skewer tomatoes, mozzarella, and basil. Drizzle with balsamic glaze. Serve chilled.</p>
+    </div>
+  </div>
+
+  <!-- ARANCINI -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/RWWkES72DRQ?si=xlLP_LxZRW1iOs5b"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Arancini</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Cooked rice</li>
+        <li>Mozzarella cubes</li>
+        <li>Bread crumbs</li>
+        <li>Eggs</li>
+        <li>Oil for frying</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Form rice balls with mozzarella inside. Coat with egg and breadcrumbs. Fry until golden. Serve hot.</p>
+    </div>
+  </div>
+
+  <!-- FOCACCIA -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+       <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/RWWkES72DRQ?si=xlLP_LxZRW1iOs5b"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <h5>Focaccia</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Flour</li>
+        <li>Yeast</li>
+        <li>Olive oil</li>
+        <li>Salt</li>
+        <li>Rosemary</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Prepare dough, let rise. Press into a pan, drizzle olive oil, sprinkle rosemary and salt. Bake 20-25 minutes.</p>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

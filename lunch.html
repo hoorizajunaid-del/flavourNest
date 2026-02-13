@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pakistani Lunch Recipes</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #FFF8E1; /* cream background */
+      margin: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #4E342E !important; /* deep brown */
+    }
+    .navbar-brand {
+      font-weight: 900;
+      color: #FFC107 !important; /* golden yellow */
+    }
+    .nav-link {
+      color: #FFE0B2 !important; /* light beige */
+    }
+    .nav-link:hover {
+      color: #D32F2F !important; /* chili red hover */
+    }
+
+    /* Hero Section */
+    .hero-section {
+      height: 40vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url("images/biryani2.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFF8E1;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    }
+
+    /* Recipe Cards */
+    .recipe-card {
+      background: #FFE0B2; /* light beige card */
+      border-radius: 15px;
+      padding: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: 0.4s;
+      height: 100%;
+    }
+    .recipe-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(211,47,47,0.4); /* chili red shadow */
+      background: #FFF3E0; /* slightly lighter beige on hover */
+    }
+    .recipe-card h5 {
+      color: #D32F2F; /* chili red */
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .recipe-card strong {
+      color: #4E342E; /* deep brown */
+    }
+    .recipe-card ul {
+      padding-left: 18px;
+      margin-bottom: 8px;
+    }
+    .recipe-card p {
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #4E342E; /* deep brown */
+      color: #FFC107; /* golden yellow */
+      padding: 40px 0;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+    footer:hover {
+      background: #3E2723; /* darker brown */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">FlavourNest</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#lunch">Lunch</a></li>
+        <li class="nav-item"><a class="nav-link" href="#soups">Soups</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rice">Rice Dishes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bread">Breads & Sides</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div>
+    <h1>Delicious Pakistani Lunch</h1>
+    <p>20 Traditional & Famous Recipes for Your Midday Meal</p>
+  </div>
+</section>
+
+<!-- Container -->
+<div class="container my-5">
+
+  <!-- ================= LUNCH RECIPES ================= -->
+  <h2 id="lunch" class="text-center mb-4">Popular Pakistani Lunch Recipes</h2>
+  <div class="row g-4">
+
+    <!-- Recipe 1: Chicken Biryani -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Chicken Biryani</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Basmati rice</li>
+          <li>Chicken pieces</li>
+          <li>Yogurt & spices (garam masala, turmeric, chili, coriander)</li>
+          <li>Onions, tomatoes</li>
+          <li>Oil & ghee</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Marinate chicken in yogurt & spices. Fry onions & tomatoes. Layer chicken and rice. Steam on low heat. Serve hot with raita.</p>
+      </div>
+    </div>
+
+    <!-- Recipe 2: Beef Nihari -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Beef Nihari</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Beef shank</li>
+          <li>Ginger-garlic paste</li>
+          <li>Onions</li>
+          <li>Spices (cumin, fennel, chili)</li>
+          <li>Flour (for thickening)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Cook beef with spices on low heat overnight. Mix flour with water to thicken. Serve hot with naan or rice.</p>
+      </div>
+    </div>
+
+    <!-- Recipe 3: Chicken Karahi -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Chicken Karahi</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Chicken pieces</li>
+          <li>Tomatoes & green chilies</li>
+          <li>Garlic, ginger</li>
+          <li>Spices (red chili, coriander, cumin)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Fry chicken with garlic, ginger & spices. Add tomatoes & cook until oil separates. Garnish with fresh coriander & serve hot.</p>
+      </div>
+    </div>
+
+    <!-- Recipe 4: Daal Chawal -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Daal Chawal</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Red lentils</li>
+          <li>Onion, garlic</li>
+          <li>Tomatoes</li>
+          <li>Spices (turmeric, chili powder, cumin)</li>
+          <li>Rice</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Cook lentils with onions, tomatoes & spices. Serve hot with steamed rice & pickle.</p>
+      </div>
+    </div>
+
+    <!-- Recipe 5: Seekh Kebab -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Seekh Kebab</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Minced beef or chicken</li>
+          <li>Onion, garlic, ginger</li>
+          <li>Spices (cumin, coriander, chili, garam masala)</li>
+          <li>Skewers</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Mix minced meat with spices & shape on skewers. Grill or pan-fry until cooked. Serve with naan & chutney.</p>
+      </div>
+    </div>
+
+    <!-- Recipe 6: Haleem -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Haleem</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Wheat, lentils & meat (chicken/beef)</li>
+          <li>Ginger, garlic</li>
+          <li>Spices (cumin, coriander, chili, turmeric)</li>
+          <li>Ghee</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Cook wheat, lentils & meat together for several hours. Blend to smooth consistency. Fry spices in ghee & add. Serve hot.</p>
+      </div>
+    </div>
+
+    <!-- Recipe 7: Chapli Kebab -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Chapli Kebab</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Minced beef or lamb</li>
+          <li>Onion, tomatoes, green chilies</li>
+          <li>Spices (cumin, coriander, chili, garam masala)</li>
+          <li>Egg & flour (binding)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Mix all ingredients. Shape flat patties. Fry until golden. Serve with naan & salad.</p>
+      </div>
+    </div>
+
+    <!-- Recipe 8: Chicken Korma -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Chicken Korma</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Chicken pieces</li>
+          <li>Yogurt & cream</li>
+          <li>Onions</li>
+          <li>Spices (cardamom, cinnamon, cumin)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Fry onions & spices. Add chicken & yogurt. Simmer until tender. Garnish with fried onions. Serve with naan.</p>
+      </div>
+    </div>
+
+    <!-- Recipe 9: Palak Gosht -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Palak Gosht</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Spinach & lamb/beef</li>
+          <li>Onion, garlic, ginger</li>
+          <li>Spices (cumin, coriander, chili)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Cook meat with onions & spices. Add spinach & cook until wilted. Serve hot with roti or rice.</p>
+      </div>
+    </div>
+
+    <!-- Recipe 10: Karahi Paneer -->
+    <div class="col-md-6 col-lg-4">
+      <div class="recipe-card">
+        <h5>Karahi Paneer</h5>
+        <strong>Ingredients:</strong>
+        <ul>
+          <li>Paneer cubes</li>
+          <li>Tomatoes & bell peppers</li>
+          <li>Garlic, ginger</li>
+          <li>Spices (red chili, cumin, coriander)</li>
+        </ul>
+        <strong>Method:</strong>
+        <p>Fry paneer lightly. Cook vegetables & spices. Add paneer. Serve with naan or paratha.</p>
+      </div>
+    </div>
+
+   <!-- ====== Continue inside your <div class="row g-4"> ====== -->
+
+<!-- Recipe 11: Beef Biryani -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Beef Biryani</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Basmati rice</li>
+      <li>Beef pieces</li>
+      <li>Yogurt & spices (garam masala, turmeric, chili, coriander)</li>
+      <li>Onions, tomatoes</li>
+      <li>Oil & ghee</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Marinate beef in yogurt & spices. Fry onions & tomatoes. Layer beef and rice. Steam on low heat. Serve hot with raita.</p>
+  </div>
+</div>
+
+<!-- Recipe 12: Chicken Shawarma -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Chicken Shawarma</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Chicken breast or thighs</li>
+      <li>Garlic, lemon, yogurt</li>
+      <li>Spices (paprika, cumin, turmeric)</li>
+      <li>Flatbreads</li>
+      <li>Salad & garlic sauce</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Marinate chicken in spices & yogurt. Grill or pan-fry. Slice and wrap in flatbread with salad & sauce. Serve warm.</p>
+  </div>
+</div>
+
+<!-- Recipe 13: Aloo Keema -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Aloo Keema</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Minced beef or lamb</li>
+      <li>Potatoes</li>
+      <li>Onions, garlic, ginger</li>
+      <li>Tomatoes & green chilies</li>
+      <li>Spices (cumin, coriander, chili powder)</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Fry onions, garlic, ginger. Add keema & spices. Cook until brown. Add potatoes & tomatoes. Simmer until tender. Serve hot.</p>
+  </div>
+</div>
+
+<!-- Recipe 14: Bhindi Masala -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Bhindi Masala</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Okra (bhindi)</li>
+      <li>Onion, garlic, ginger</li>
+      <li>Tomatoes</li>
+      <li>Spices (turmeric, chili, cumin)</li>
+      <li>Oil</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Fry onions & spices. Add okra & tomatoes. Cook until tender. Serve with roti or paratha.</p>
+  </div>
+</div>
+
+<!-- Recipe 15: Mutton Pulao -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Mutton Pulao</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Basmati rice</li>
+      <li>Mutton pieces</li>
+      <li>Yogurt & spices (garam masala, cinnamon, cardamom)</li>
+      <li>Onions & ghee</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Cook mutton with spices. Fry onions & layer with rice. Steam on low heat. Serve hot with salad.</p>
+  </div>
+</div>
+
+<!-- Recipe 16: Chana Masala -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Chana Masala</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Chickpeas (soaked overnight)</li>
+      <li>Onions, tomatoes, garlic, ginger</li>
+      <li>Spices (cumin, coriander, chili, turmeric)</li>
+      <li>Oil</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Cook chickpeas until tender. Fry onion & spices. Add tomatoes & chickpeas. Simmer for 10–15 mins. Serve with roti.</p>
+  </div>
+</div>
+
+<!-- Recipe 17: Lahori Fried Fish -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Lahori Fried Fish</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Fish fillets</li>
+      <li>Gram flour & spices (turmeric, chili, salt)</li>
+      <li>Lemon juice</li>
+      <li>Oil for frying</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Marinate fish with spices & lemon. Coat with gram flour. Deep fry until golden. Serve with chutney or salad.</p>
+  </div>
+</div>
+
+<!-- Recipe 18: Egg Curry -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Egg Curry</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Boiled eggs</li>
+      <li>Onions, garlic, ginger</li>
+      <li>Tomatoes & green chilies</li>
+      <li>Spices (cumin, coriander, turmeric, chili)</li>
+      <li>Oil</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Fry onion & spices. Add tomatoes & simmer. Add boiled eggs. Cook 5 mins. Garnish & serve with rice or roti.</p>
+  </div>
+</div>
+
+<!-- Recipe 19: Vegetable Pulao -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Vegetable Pulao</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Basmati rice</li>
+      <li>Mixed vegetables (carrot, peas, beans)</li>
+      <li>Onion & garlic</li>
+      <li>Spices (cumin, cardamom, cloves)</li>
+      <li>Oil or ghee</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Sauté onions & vegetables. Add rice & spices. Cook in water until fluffy. Serve hot with raita.</p>
+  </div>
+</div>
+
+<!-- Recipe 20: Masoor Daal -->
+<div class="col-md-6 col-lg-4">
+  <div class="recipe-card">
+    <h5>Masoor Daal</h5>
+    <strong>Ingredients:</strong>
+    <ul>
+      <li>Red lentils</li>
+      <li>Onions, garlic, ginger</li>
+      <li>Tomatoes</li>
+      <li>Spices (turmeric, chili, cumin)</li>
+      <li>Oil or ghee</li>
+    </ul>
+    <strong>Method:</strong>
+    <p>Cook lentils with onions, tomatoes, & spices. Simmer until tender. Serve with steamed rice or chapati.</p>
+  </div>
+</div>
+
+<!-- ================= INTERNATIONAL LUNCH RECIPES ================= -->
+<h2 id="international" class="text-center my-5" style="color:#D32F2F;">International Lunch Recipes</h2>
+<div class="row g-4">
+
+  <!-- Recipe 1: Italian Lasagna -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>Italian Lasagna</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Lasagna sheets</li>
+        <li>Ground beef or chicken</li>
+        <li>Tomato sauce & garlic</li>
+        <li>Cheese (mozzarella & parmesan)</li>
+        <li>Herbs (basil, oregano)</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Cook meat with tomato sauce & herbs. Layer sheets, meat, and cheese. Bake 30–40 mins until golden. Serve hot.</p>
+    </div>
+  </div>
+
+  <!-- Recipe 2: Greek Salad with Chicken -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>Greek Salad with Chicken</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Grilled chicken breast</li>
+        <li>Tomatoes, cucumbers, bell peppers</li>
+        <li>Feta cheese</li>
+        <li>Olives & red onion</li>
+        <li>Olive oil & lemon dressing</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Mix vegetables, feta, and olives. Slice grilled chicken on top. Drizzle with olive oil & lemon. Serve fresh.</p>
+    </div>
+  </div>
+
+  <!-- Recipe 3: Mexican Tacos -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>Mexican Tacos</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Soft corn tortillas</li>
+        <li>Grilled meat or chicken</li>
+        <li>Lettuce, tomatoes, onions</li>
+        <li>Cheese & salsa</li>
+        <li>Avocado (optional)</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Fill tortillas with meat, veggies, and cheese. Top with salsa & avocado. Fold and serve immediately.</p>
+    </div>
+  </div>
+
+  <!-- Recipe 4: Japanese Sushi Bowl -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>Japanese Sushi Bowl</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Steamed rice</li>
+        <li>Raw salmon or tuna</li>
+        <li>Avocado & cucumber</li>
+        <li>Soy sauce & sesame seeds</li>
+        <li>Seaweed strips</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Layer rice, fish, and veggies in a bowl. Drizzle with soy sauce. Garnish with sesame & seaweed. Serve chilled.</p>
+    </div>
+  </div>
+
+  <!-- Recipe 5: Indian Butter Chicken -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>Indian Butter Chicken</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Chicken pieces</li>
+        <li>Tomato puree & cream</li>
+        <li>Ginger-garlic paste</li>
+        <li>Spices (garam masala, chili, turmeric)</li>
+        <li>Butter & oil</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Cook chicken in spices. Add tomato puree & cream. Simmer until thick. Serve hot with naan or rice.</p>
+    </div>
+  </div>
+
+  <!-- Recipe 6: French Quiche Lorraine -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>French Quiche Lorraine</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Shortcrust pastry</li>
+        <li>Bacon or ham</li>
+        <li>Eggs & cream</li>
+        <li>Gruyere cheese</li>
+        <li>Nutmeg, salt & pepper</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Place bacon & cheese in pastry. Mix eggs & cream, pour over. Bake 30–35 mins. Serve warm or cold.</p>
+    </div>
+  </div>
+
+  <!-- Recipe 7: American BLT Sandwich -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>American BLT Sandwich</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Bread slices</li>
+        <li>Bacon strips</li>
+        <li>Lettuce & tomato</li>
+        <li>Mayonnaise</li>
+        <li>Salt & pepper</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Cook bacon until crispy. Toast bread. Spread mayo, add bacon, lettuce, tomato. Serve immediately.</p>
+    </div>
+  </div>
+
+  <!-- Recipe 8: Thai Green Curry with Rice -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>Thai Green Curry with Rice</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Chicken or tofu</li>
+        <li>Coconut milk & green curry paste</li>
+        <li>Vegetables (bell pepper, zucchini)</li>
+        <li>Basil & lime leaves</li>
+        <li>Steamed jasmine rice</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Cook protein & vegetables in coconut milk with curry paste. Garnish with basil. Serve over jasmine rice.</p>
+    </div>
+  </div>
+
+  <!-- Recipe 9: Spanish Paella -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>Spanish Paella</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Basmati or short-grain rice</li>
+        <li>Seafood or chicken</li>
+        <li>Bell peppers & peas</li>
+        <li>Saffron & paprika</li>
+        <li>Olive oil & garlic</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Sauté vegetables & protein. Add rice & spices. Cook with stock until rice absorbs liquid. Serve hot.</p>
+    </div>
+  </div>
+
+  <!-- Recipe 10: Lebanese Falafel Wrap -->
+  <div class="col-md-6 col-lg-4">
+    <div class="recipe-card">
+      <h5>Lebanese Falafel Wrap</h5>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Falafel (chickpea patties)</li>
+        <li>Flatbread or pita</li>
+        <li>Lettuce, tomato, cucumber</li>
+        <li>Tahini sauce</li>
+        <li>Pickles</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Place falafel in flatbread with vegetables & tahini. Roll tightly. Serve fresh with pickles.</p>
+    </div>
+  </div>
+
+</div> <!-- end of international row -->
+
+<!-- ====== END OF RECIPES ====== -->
+
+
+  </div> <!-- end of row -->
+
+</div> <!-- end of container -->
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p class="mb-1">© 2026 All Rights Reserved</p>
+    <p class="mb-0">Created by <strong>Hooriza Junaid</strong></p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

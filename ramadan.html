@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> FlavorNest</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* 🌌 BODY */
+body {
+    background: linear-gradient(135deg, #140021, #2b004b, #1a002e);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+body {
+    background: #2d004d; /* same purple everywhere */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: #3b0066;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero p {
+    opacity: 0.8;
+}
+
+/* Cards */
+.card {
+    background: #3b0066;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body ul,
+.card-body ol {
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    background: #3b0066;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer h5 {
+    font-weight: bold;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+/* 🌙 RAMADAN GOLDEN STARS */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* Small glowing stars */
+.stars::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(2px 2px at 20% 30%, #ffd700, transparent),
+        radial-gradient(2px 2px at 70% 60%, #ffea00, transparent),
+        radial-gradient(2px 2px at 40% 80%, #fff4b3, transparent),
+        radial-gradient(2px 2px at 85% 20%, #ffd700, transparent),
+        radial-gradient(2px 2px at 10% 70%, #ffea00, transparent),
+         radial-gradient(2px 2px at 20% 30%, #ffd700, transparent),
+        radial-gradient(2px 2px at 70% 60%, #ffea00, transparent),
+        radial-gradient(2px 2px at 40% 80%, #fff4b3, transparent),
+        radial-gradient(2px 2px at 85% 20%, #ffd700, transparent),
+        radial-gradient(2px 2px at 10% 70%, #ffea00, transparent);
+    animation: twinkle 3s infinite alternate;
+    opacity: 0.8;
+}
+
+/* Twinkle Animation */
+@keyframes twinkle {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* Make content above stars */
+.navbar,
+.hero,
+.container,
+.footer {
+    position: relative;
+    z-index: 1;
+}
+
+</style>
+
+
+</style>
+</head>
+
+<body>
+<div class="stars"></div>
+
+
+<!-- 🟣 NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">FlavorNest</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Popular</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Ramadan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="stars"></div>
+<!-- HERO -->
+<section class="hero">
+    <h1>🌙 Ramadan Special Recipes</h1>
+    <p>Explore delicious recipes for Iftar & Sehri</p>
+</section>
+
+<!-- RECIPES -->
+<div class="container mt-5">
+  <div class="row">
+
+    <!-- Card 1 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100 p-3" style="background:#3b0066; border-radius:15px; color:white;">
+
+        <h4 class="text-center mb-3">Chicken Biryani</h4>
+
+        <div class="ratio ratio-16x9 mb-3">
+        <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/uFa6urPkK4c?si=r0kcOwNMo7hFmUo_"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        </div>
+
+        <p style="font-size:14px;">
+          Traditional spicy layered rice dish cooked with chicken, yogurt,
+          aromatic spices and dum style cooking.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100 p-3" style="background:#3b0066; border-radius:15px; color:white;">
+
+        <h4 class="text-center mb-3">Beef Karahi</h4>
+
+        <div class="ratio ratio-16x9 mb-3">
+        <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/bo1U7afiOI8?si=y4aKPvKVSsx3hwfo"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        </div>
+
+        <p style="font-size:14px;">
+          Rich tomato-based Pakistani karahi cooked with tender beef,
+          green chilies and fresh coriander.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100 p-3" style="background:#3b0066; border-radius:15px; color:white;">
+
+        <h4 class="text-center mb-3">Haleem</h4>
+
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/msNXcz5jV0I?si=x4ZlMKkzC8CwR35R"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+        </div>
+
+        <p style="font-size:14px;">
+          Slow-cooked blend of wheat, lentils and meat,
+          topped with fried onions and lemon.
+        </p>
+
+      </div>
+    </div>
+<div class="row g-4">
+
+  <!-- Alfredo Bites -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100">
+     <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/hbkC3cVDqgc?si=BluyTlR2C1F4Hnt6"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title">Alfredo Bites</h5>
+        <p>Mix cooked pasta with cream & Parmesan, shape into bites, bake at 180°C for 10 min.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Creamy Cheese Pie -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100">
+    <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/Ih6Jm8XmX_w?si=1PeR_53H4t0sWOHMb"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title">Creamy Cheese Pie</h5>
+        <p>Blend cream cheese, eggs, and sugar, pour into crust, bake 25-30 min at 175°C.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Samosa -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100">
+   <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/lSW_whPq1ro?si=O3P7jKYCKZuNniKF"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title">Samosa</h5>
+        <p>Stuff pastry with spiced potatoes & peas, fold into triangles, deep fry till golden.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pakora Piyaz (Onion Pakora) -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100">
+    <iframe
+  width="100%"
+  height="400"
+ src="https://www.youtube.com/embed/34ieOD9ImVs?si=bCJIAPTDnD3Mni40"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title">Pakora Piyaz</h5>
+        <p>Mix sliced onions with chickpea flour, spices, and water, deep fry until crispy.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pakora Aloo (Potato Pakora) -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100">
+  <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/AJp9obukQuY?si=PiMR53u-gZkF_rqS"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title">Pakora Aloo</h5>
+        <p>Coat potato slices with spiced chickpea flour batter and deep fry until golden.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fruit Chat -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100">
+      <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/TzWbmj3B7w4?si=K5DIbcraYVUuhB1H"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title">Fruit Chat</h5>
+        <p>Mix chopped fruits with chaat masala, lemon juice, and mint. Serve fresh.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dahi Baale -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100">
+      <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/iWdx0tY3keo?si=vEKXldIRruS0HUt4"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title">Dahi Baale</h5>
+        <p>Soak fried lentil balls in yogurt, top with chutneys, chili, and coriander.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Freesko (Cold Drink/Smoothie) -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100">
+     <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/PKu6G3H45UQ?si=mHMgQAR1XLBJNSje"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title">Freesko</h5>
+        <p>Blend ice, milk, sugar, and fruits of choice. Serve chilled.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bread & Cheese Toast -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100">
+     <iframe
+  width="100%"
+  height="400"
+src="https://www.youtube.com/embed/MYZOLtjpLVo?si=1e5co8G08woEH4b_"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+      <div class="card-body text-center">
+        <h5 class="card-title">Bread & Cheese</h5>
+        <p>Layer bread with cheese, butter lightly, and grill or toast till golden.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4">
+
+  <!-- Chicken Cheese Pockets -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Chicken Cheese Pockets</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/E3YoQAPz7BI?si=n67FVsMfgsbm5EEV" title="Chicken Cheese Pockets" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Chicken, cooked & shredded - 1 cup</li>
+        <li>Cheese, grated - 1/2 cup</li>
+        <li>Puff pastry sheets - 4</li>
+        <li>Salt, pepper, herbs - to taste</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Mix chicken and cheese with seasoning, stuff into pastry, seal, bake 20 min at 180°C until golden.</p>
+    </div>
+  </div>
+
+  <!-- Bread Roll -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Bread Roll</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/69DVP5ITM30?si=SiY7Zjchv0vkkI2v"  title="Bread Roll" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Bread slices - 6</li>
+        <li>Boiled vegetables or chicken - 1 cup</li>
+        <li>Cheese - 1/2 cup</li>
+        <li>Egg - 1 (for coating)</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Flatten bread, add filling, roll, coat in egg, deep fry until golden.</p>
+    </div>
+  </div>
+
+  <!-- Chicken Lollipop -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Chicken Lollipop</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3m0JR27SjSk?si=omUdPMcPxseKlfiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Chicken wings - 500g</li>
+        <li>Garlic, ginger paste - 1 tbsp</li>
+        <li>Soy sauce, chili sauce - 2 tbsp each</li>
+        <li>Flour & cornflour mix - 1/2 cup</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Marinate chicken, coat with flour mix, deep fry until crispy. Serve hot.</p>
+    </div>
+  </div>
+
+  <!-- Macaroni -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Macaroni</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Macaroni" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Macaroni - 2 cups</li>
+        <li>Cheese - 1 cup</li>
+        <li>Milk - 1 cup</li>
+        <li>Butter - 2 tbsp</li>
+        <li>Salt, pepper - to taste</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Boil macaroni, melt butter, add milk and cheese, mix well, cook until creamy.</p>
+    </div>
+  </div>
+
+  <!-- Spaghetti -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Spaghetti</h5>
+      <div class="ratio ratio-16x9 mb-2">
+         <iframe src="https://www.youtube.com/embed/8SD-r0uAFoQ?si=1jF9THgWKKUyem3Q"title="Spaghetti" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Spaghetti - 200g</li>
+        <li>Tomato sauce - 1 cup</li>
+        <li>Olive oil, garlic - 1 tbsp each</li>
+        <li>Salt, pepper, herbs - to taste</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Boil spaghetti, sauté garlic in oil, add sauce, mix with spaghetti, serve hot.</p>
+    </div>
+  </div>
+
+  <!-- Spring Roll -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Spring Roll</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/OOienzr44zgsi=ZwmOIgWCjltGO1li" title="Spring Roll" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Spring roll sheets - 6</li>
+        <li>Vegetables chopped - 1 cup</li>
+        <li>Soy sauce - 1 tbsp</li>
+        <li>Oil for frying</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Cook vegetables with sauce, fill sheets, roll tightly, deep fry until crisp.</p>
+    </div>
+  </div>
+
+  <!-- Keema Samosa -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Keema Samosa</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/dsf3CM1okZw?si=qOA7MsPsnWsyoQVD" title="Keema Samosa" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Minced meat - 1 cup</li>
+        <li>Onion, chopped - 1</li>
+        <li>Spices - salt, pepper, chili powder</li>
+        <li>Pastry sheets - 6</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Cook meat with onions & spices, fill sheets, fold into triangles, fry till golden.</p>
+    </div>
+  </div>
+
+  <!-- Chocolate Covered Dates -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Chocolate Covered Dates</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/CLB8V8oei1g?si=_q4iSLLiHDkcuA2m"title="Chocolate Covered Dates" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Dates - 12</li>
+        <li>Chocolate - 100g, melted</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Stuff dates if desired, dip in melted chocolate, refrigerate until set.</p>
+    </div>
+  </div>
+
+  <!-- Stuffed Dates -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Stuffed Dates</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/QYzHOyu8tmw?si=qd1XvdbMpjTTk_83" title="Stuffed Dates" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Dates - 12</li>
+        <li>Almonds or walnuts - 12</li>
+        <li>Optional: Cream cheese - 2 tbsp</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Open dates, stuff with nuts & cheese, close, serve fresh or chilled.</p>
+    </div>
+  </div>
+
+  <!-- Baked Dates -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Baked Dates</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/QkAVltmi2-M?si=_gwdOvLCj4kbOT8t" title="Baked Dates" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Dates - 12</li>
+        <li>Butter - 1 tbsp</li>
+        <li>Honey - 1 tsp</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Preheat oven to 180°C, brush dates with butter & honey, bake 10 min, serve warm.</p>
+    </div>
+  </div>
+<div class="row g-4">
+
+  <!-- Mint Mojito -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Mint Mojito</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src=src="https://www.youtube.com/embed/4VSF56JyDkU?si=WxI2hVVePSCKlePG" title="Mint Mojito" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Mint leaves - 10-12</li>
+        <li>Lemon juice - 2 tbsp</li>
+        <li>Sugar - 1 tsp</li>
+        <li>Soda water - 1 cup</li>
+        <li>Ice cubes - as needed</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Muddle mint with sugar & lemon juice, add ice, pour soda water, stir gently, serve chilled.</p>
+    </div>
+  </div>
+
+  <!-- Sabudana Drink -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Sabudana Drink</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/LobHk4dkYtU?si=gKoICvElWYXNPJtW" title="Sabudana Drink" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Sabudana (tapioca pearls) - 2 tbsp</li>
+        <li>Milk - 1 cup</li>
+        <li>Sugar - 1 tsp</li>
+        <li>Ice cubes - optional</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Soak sabudana for 30 min, boil in milk with sugar until soft, chill, serve with ice if desired.</p>
+    </div>
+  </div>
+
+  <!-- Cold Coffee -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Cold Coffee</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/xA_-m4EMjvs?si=E413yh6cr9LuNNtR" title="Cold Coffee" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Milk - 1 cup</li>
+        <li>Coffee powder - 1 tsp</li>
+        <li>Sugar - 1-2 tsp</li>
+        <li>Ice cubes - 4-5</li>
+        <li>Whipped cream - optional</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Blend milk, coffee, sugar, and ice until frothy. Pour into a glass, top with whipped cream.</p>
+    </div>
+  </div>
+<div class="row g-4">
+
+  <!-- Arabian Pudding -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Arabian Pudding</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/aTjLQiTsHEA?si=Zy9x3Nqam83NMkDy" title="Arabian Pudding" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Milk - 2 cups</li>
+        <li>Sugar - 1/2 cup</li>
+        <li>Cornflour - 2 tbsp</li>
+        <li>Cardamom powder - 1/2 tsp</li>
+        <li>Rose water - 1 tsp</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Mix cornflour in milk, cook with sugar on low heat until thick, add cardamom & rose water, chill before serving.</p>
+    </div>
+  </div>
+
+  <!-- Custard Triple -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Custard Triple</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Custard Triple" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Custard powder - 2 tbsp</li>
+        <li>Milk - 2 cups</li>
+        <li>Sugar - 1/4 cup</li>
+        <li>Mixed fruits - 1 cup</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Cook custard powder with milk & sugar until thick, layer with fruits, chill and serve.</p>
+    </div>
+  </div>
+
+  <!-- Chocolate Brownie -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Chocolate Brownie</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://youtu.be/embed/8GxfnU5gVII?si=rP5oKKVx1F3ccBWV" title="Chocolate Brownie" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Butter - 100g</li>
+        <li>Chocolate - 100g</li>
+        <li>Sugar - 1/2 cup</li>
+        <li>Flour - 1/2 cup</li>
+        <li>Eggs - 2</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Melt butter & chocolate, mix with sugar, eggs, and flour, bake at 180°C for 20-25 min.</p>
+    </div>
+  </div>
+
+  <!-- Caramel Creme Delight -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Caramel Creme Delight</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/QZk7fOKWHBk?si=1XDdmgeOFRVO9ChT" title="Caramel Creme Delight" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Sugar - 1/2 cup</li>
+        <li>Milk - 2 cups</li>
+        <li>Cornflour - 2 tbsp</li>
+        <li>Vanilla essence - 1 tsp</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Caramelize sugar, add milk & cornflour, cook until thick, add vanilla, pour into cups, chill.</p>
+    </div>
+  </div>
+
+  <!-- Sheer Korma -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Sheer Korma</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/DfGNYXNBfsY?si=4bDVZpRGB3pxSHpl" title="Sheer Korma" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Milk - 4 cups</li>
+        <li>Vermicelli - 1/2 cup</li>
+        <li>Sugar - 1/2 cup</li>
+        <li>Dry fruits & nuts - 1/2 cup</li>
+        <li>Cardamom - 1 tsp</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Boil milk, fry vermicelli in ghee, add to milk with sugar, cardamom, and dry fruits. Simmer until creamy.</p>
+    </div>
+  </div>
+
+  <!-- Kheer -->
+  <div class="col-md-4 col-sm-6">
+    <div class="card h-100 p-3">
+      <h5 class="card-title text-center">Kheer</h5>
+      <div class="ratio ratio-16x9 mb-2">
+        <iframe src="https://www.youtube.com/embed/jIRpsQOc-28?si=bC50GF7LzSCytQnQ" title="Kheer" allowfullscreen></iframe>
+      </div>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Rice - 1/4 cup</li>
+        <li>Milk - 2 cups</li>
+        <li>Sugar - 1/4 cup</li>
+        <li>Cardamom powder - 1/2 tsp</li>
+        <li>Almonds & pistachios - 2 tbsp</li>
+      </ul>
+      <strong>Recipe:</strong>
+      <p>Boil rice in milk on low heat, add sugar & cardamom, simmer until creamy, garnish with nuts.</p>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+
+<!-- =======================footerrr -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row text-center text-md-start">
+
+      <div class="col-md-4 mb-4">
+        <h5>FlavorNest</h5>
+        <p>Authentic Ramadan recipes made with love and tradition.</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <p><a href="#">Home</a></p>
+        <p><a href="#">Ramadan</a></p>
+        <p><a href="#">Popular</a></p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5>Contact</h5>
+        <p>Email: info@flavornest.com</p>
+        <p>Karachi, Pakistan</p>
+      </div>
+
+    </div>
+
+    <hr style="background:white; opacity:0.3;">
+
+    <div class="text-center">
+      © 2026 FlavorNest | All Rights Reserved
+    </div>
+  </div>
+</footer>

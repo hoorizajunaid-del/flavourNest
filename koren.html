@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Korean Food Recipes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+       <style>
+body{
+    background:#fafafa;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  /* Navbar */
+  .navbar{
+    background:#111 !important;
+  }
+  .navbar-brand{
+    font-weight:700;
+    color:#e60023 !important;
+  }
+  .nav-link{
+    color:#fff !important;
+  }
+  .nav-link:hover{
+    color:#e60023 !important;
+  }
+
+  /* Hero */
+  .hero-section{
+    height:80vh;
+    background-color: #c33c2d;
+    opacity: 0.4;
+background-image:
+    url("images/ramen.png");
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    display:flex;
+    align-items:center;
+  }
+
+  .hero-section h1{
+    font-size:3rem;
+    font-weight:800;
+    color:#f6edef;
+  }
+
+  /* Section titles */
+  h2{
+    font-weight:700;
+    color:#111;
+  }
+
+  /* Recipe Cards */
+  .recipe-card{
+    background:#fff;
+    padding:15px;
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+    height:100%;
+  }
+
+  .recipe-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(230,0,35,0.25);
+  }
+
+  .recipe-card h5,
+  .recipe-card h4{
+    color:#e60023;
+    font-weight:700;
+  }
+
+  .recipe-card iframe{
+    width:100%;
+    height:220px;
+    border-radius:12px;
+    margin-bottom:10px;
+  }
+
+  /* Footer (optional later) */
+</style>
+<style>
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 0 20px;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #ff4d6d;
+  padding-left: 5px;
+}
+
+.footer hr {
+  border-color: #333;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">FlavourNest</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#breakfast">Breakfast</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lunch">Lunch</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dinner">Dinner</a></li>
+        <li class="nav-item"><a class="nav-link" href="#snacks">Snacks</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-section text-center">
+  <div class="container">
+    <h1>Taste of Korea</h1>
+    <p>Authentic Korean recipes from breakfast to snacks</p>
+  </div>
+</section>
+
+<div class="container my-5">
+
+<!-- ================= BREAKFAST ================= -->
+<h2 id="breakfast" class="text-center mb-4">Korean Breakfast</h2>
+<div class="row g-4">
+
+  <div class="col-md-6 col-lg-3">
+    <div class="recipe-card">
+      <iframe src="https://www.youtube.com/embed/e5-HJ01Hd7k?si=JwYVlcXsLS-5Sxw7" allowfullscreen></iframe>
+      <h5>Kimchi Omelette</h5>
+      <p>Spicy omelette with fermented kimchi.</p>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Eggs</li><li>Kimchi</li><li>Oil</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Cook kimchi, add beaten eggs, fry till set.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="recipe-card">
+      <iframe src="https://www.youtube.com/embed/BKlLS5wHu5Q?si=xjA2fiwAAyckFdFa" allowfullscreen></iframe>
+      <h5>Gyeran Bap</h5>
+      <p>Rice with egg & sesame oil.</p>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Rice</li><li>Egg</li><li>Soy sauce</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Mix hot rice with egg and seasonings.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="recipe-card">
+      <iframe src="https://www.youtube.com/embed//jl1rkn1IdeY?si=Ys6p5krTg0kx2AWR" allowfullscreen></iframe>
+      <h5>Miyeok Guk</h5>
+      <p>Korean seaweed soup.</p>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Seaweed</li><li>Beef</li><li>Garlic</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Boil seaweed with beef and seasoning.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="recipe-card">
+      <iframe src="https://www.youtube.com/embed/0mbP7Hr243M?si=a3Mr98RHhKl7jlTm" allowfullscreen></iframe>
+      <h5>Korean Toast</h5>
+      <p>Sweet & savory street toast.</p>
+      <strong>Ingredients:</strong>
+      <ul>
+        <li>Bread</li><li>Egg</li><li>Cabbage</li>
+      </ul>
+      <strong>Method:</strong>
+      <p>Cook egg mix, sandwich between bread.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= LUNCH ================= -->
+<h2 id="lunch" class="text-center mt-5 mb-4">Korean Lunch</h2>
+<div class="row g-4">
+
+  <div class="col-md-6 col-lg-3">
+    <div class="recipe-card">
+      <iframe src="https://www.youtube.com/embed/lqUtV6lT1n4?si=AYryc8m06pFfdo6Y" allowfullscreen></iframe>
+      <h5>Bibimbap</h5>
+      <p>Rice bowl with veggies & egg.</p>
+      <ul><li>Rice</li><li>Veggies</li><li>Gochujang</li></ul>
+      <p>Mix everything and serve hot.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="recipe-card">
+      <iframe src="https://www.youtube.com/embed/wdqqAvDw8x4?si=Op-Vw38-jFP1u9AL" allowfullscreen></iframe>
+      <h5>Japchae</h5>
+      <p>Glass noodles with vegetables.</p>
+      <ul><li>Noodles</li><li>Soy sauce</li></ul>
+      <p>Stir-fry and mix noodles.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="recipe-card">
+      <iframe src="https://www.youtube.com/embed/4hcsFW07cRA?si=Z6VeUnHQgvN7LUjQ" allowfullscreen></iframe>
+      <h5>Kimchi Fried Rice</h5>
+      <p>Spicy fried rice.</p>
+      <ul><li>Rice</li><li>Kimchi</li></ul>
+      <p>Stir-fry all ingredients.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-3">
+    <div class="recipe-card">
+      <iframe src="https://www.youtube.com/embed/NhUYo3NgmQM?si=CJFgvb2-Xc1154Sp" allowfullscreen></iframe>
+      <h5>Doenjang Jjigae</h5>
+      <p>Soybean paste stew.</p>
+      <ul><li>Tofu</li><li>Paste</li></ul>
+      <p>Boil with vegetables.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= DINNER ================= -->
+<h2 id="dinner" class="text-center mt-5 mb-4">Korean Dinner</h2>
+<div class="row g-4">
+
+  <div class="col-md-6 col-lg-3"><div class="recipe-card"> <iframe src="https://www.youtube.com/embed/QY-iiiFmjLI?si=GC_JGY35c4GLhOZJ" allowfullscreen></iframe><h5>Bulgogi</h5><p>Marinated beef BBQ.</p></div></div>
+  <div class="col-md-6 col-lg-3"><div class="recipe-card"> <iframe src="https://www.youtube.com/embed/AB9VEyEPkyM?si=1MtWNsZNacrQ_wG6" allowfullscreen></iframe><h5>Samgyeopsal</h5><p>Grilled pork belly.</p></div></div>
+  <div class="col-md-6 col-lg-3"><div class="recipe-card"> <iframe src="https://www.youtube.com/embed/V0ZLevz3dHQ?si=mhD3VoM3roGeu8nB" allowfullscreen></iframe><h5>Tteokbokki</h5><p>Spicy rice cakes.</p></div></div>
+  <div class="col-md-6 col-lg-3"><div class="recipe-card"> <iframe src="https://www.youtube.com/embed/zzt9uJbQMGQ?si=XJ4XF2rQ7ho4gDoT"  allowfullscreen></iframe><h5>Jjajangmyeon</h5><p>Noodles with black bean sauce.</p></div></div>
+
+</div>
+
+<!-- ================= SNACKS ================= -->
+<h2 id="snacks" class="text-center mt-5 mb-4">Korean Snacks</h2>
+<div class="row g-4">
+
+  <div class="col-md-6 col-lg-3"><div class="recipe-card"> <iframe src="https://www.youtube.com/embed/dCobQem-Ulk?si=N9cZWwHLoHbUhP-w" allowfullscreen></iframe><h5>Hotteok</h5><p>Sweet pancakes.</p></div></div>
+  <div class="col-md-6 col-lg-3"><div class="recipe-card"> <iframe src="https://www.youtube.com/embed/Y-Y9CXGRJPU?si=fur3iHM3CQCkh-f_"  allowfullscreen></iframe><h5>Kimbap</h5><p>Seaweed rice rolls.</p></div></div>
+  <div class="col-md-6 col-lg-3"><div class="recipe-card"> <iframe src="https://www.youtube.com/embed/Oq-dCkdwB58?si=AsUmOl0Aw2ysmMPV"  allowfullscreen></iframe><h5>Fish Cake</h5><p>Street food snack.</p></div></div>
+  <div class="col-md-6 col-lg-3"><div class="recipe-card"> <iframe src="https://www.youtube.com/embed/T_Qad5LajT4?si=WYYOs5SVTPvHpC9j" allowfullscreen></iframe><h5>Honey Butter Chips</h5><p>Popular Korean snack.</p></div></div>
+
+</div>
+
+</div>
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row text-center text-md-start">
+
+      <!-- About -->
+      <div class="col-md-4 mb-4">
+        <h5>Korean Seoul</h5>
+        <p>
+          Discover the beauty of Korean culture, food, traditions, and travel.
+          Experience the charm of Seoul and beyond.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Korean Food</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">Travel</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact</h5>
+        <p>Email: info@koreanseoul.com</p>
+        <p>Location: Seoul, South Korea</p>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="text-center pb-3">
+      © 2026 Korean Seoul | All Rights Reserved
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

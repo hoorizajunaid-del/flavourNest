@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>foody vibee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+  <body>
+     <!-- navbarrrrrr -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+
+    <!-- LOGO -->
+    <a class="navbar-brand fw-bold" href="#">
+      🍽️ FlavorNest
+    </a>
+
+    <!-- TOGGLER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- NAV LINKS -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+
+      <ul class="navbar-nav mx-auto">
+
+        <!-- HOME -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Home</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Overview</a></li>
+            <li><a class="dropdown-item" href="#">Categories</a></li>
+          </ul>
+        </li>
+
+        <!-- POPULAR -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Popular</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Most Viewed</a></li>
+            <li><a class="dropdown-item" href="#">Top Rated</a></li>
+          </ul>
+        </li>
+
+        <!-- NEW RECIPES -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">New Recipes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Latest</a></li>
+            <li><a class="dropdown-item" href="#">This Week</a></li>
+          </ul>
+        </li>
+
+        <!-- CONTACT -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Contact Us</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Email</a></li>
+            <li><a class="dropdown-item" href="#">Instagram</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <!-- SEARCH BAR -->
+      <form class="d-flex">
+        <input class="form-control search-input me-2" type="search" placeholder="Search recipes">
+        <button class="btn btn-search" type="submit">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+<!-- hero section -->
+
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="hero-content text-center">
+      <h1>"This is a cozy spot to discover tasty, homely recipes."</h1>
+      <p>
+        Discover cozy, delicious, and easy-to-make recipes crafted
+        with love for your everyday kitchen.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="intro-section">
+  <h2>Discover Recipes for Every Moment</h2>
+  <p>
+    From energizing breakfasts to comforting dinners and sweet desserts,
+    FlavorNest brings you handpicked recipes for every taste and time of day.
+  </p>
+</section>
+
+<!-- SECONDARY NAVBAR / CATEGORY MENU -->
+<nav class="navbar navbar-expand-lg secondary-navbar">
+  <div class="container">
+
+    <!-- Toggler Button (Mobile) -->
+    <button class="navbar-toggler mx-auto" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#categoryNav"
+      aria-controls="categoryNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse justify-content-center" id="categoryNav">
+      <ul class="navbar-nav text-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Breakfast</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Lunch</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Dinner</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Snacks</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Desserts</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+ <!-- cardssssss -->
+ <section class="cards">
+  <div class="card">
+    <img src="images/breakfast.png" alt="Breakfast">
+    <i class="fa-solid fa-mug-hot"></i>
+    <h3>Breakfast</h3>
+    <p>Healthy and energizing recipes to start your day right.</p>
+   <a href="breakfast.html" class="card-btn">View Recipes</a>
+  </div>
+
+  <div class="card">
+    <img src="images/lunch1.png" alt="Lunch">
+    <i class="fa-solid fa-bowl-food"></i>
+    <h3>Lunch</h3>
+    <p>Simple, quick, and tasty lunch meals for everyone.</p>
+   <a href="lunch.html" class="card-btn">View Recipes</a>
+  </div>
+
+  <div class="card">
+    <img src="images/dinner.png" alt="Dinner">
+    <i class="fa-solid fa-utensils"></i>
+    <h3>Dinner</h3>
+    <p>Delicious dinner ideas full of comfort and flavor.</p>
+   <a href="dinners.html"class="card-btn">View Recipes</a>
+  </div>
+
+  <div class="card">
+    <img src="images/snacks.png" alt="Snacks">
+    <i class="fa-solid fa-cookie-bite"></i>
+    <h3>Snacks</h3>
+    <p>Crunchy and light snacks for anytime cravings.</p>
+   <a href="snack.html" class="card-btn">View Recipes</a>
+  </div>
+
+
+  <div class="card">
+    <img src="images/dremecake.png" alt="Dessert">
+    <i class="fa-solid fa-ice-cream"></i>
+    <h3>Desserts</h3>
+    <p>Sweet treats to make every moment special.</p>
+   <a href="desert.html" class="card-btn">View Recipes</a>
+  </div>
+</section>
+<!-- WORLD BEST FOODS -->
+<section class="world-foods">
+  <div class="container">
+    <h2 class="text-center mb-2">Best Foods of the World</h2>
+    <p class="text-center text-secondary mb-5">
+      Iconic dishes loved across different countries
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Pakistan -->
+      <div class="col-md-6 col-lg-3">
+        <div class="country-card card">
+          <img src="images/recipie3.png" alt="Pakistani Food">
+          <div class="card-body text-center">
+            <h5>Pakistan 🇵🇰</h5>
+            <p class="text-secondary">
+              Biryani, karahi, nihari and rich desi flavors.
+            </p>
+            <a href="pakistan.html" class="btn btn-danger rounded-pill w-100">
+              Explore
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- India -->
+      <div class="col-md-6 col-lg-3">
+        <div class="country-card card">
+          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" alt="Indian Food">
+          <div class="card-body text-center">
+            <h5>India 🇮🇳</h5>
+            <p class="text-secondary">
+              Curries, naan, spices and street food magic.
+            </p>
+            <a href="indian.html" class="btn btn-danger rounded-pill w-100">
+              Explore
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Korea -->
+      <div class="col-md-6 col-lg-3">
+        <div class="country-card card">
+          <img src="images/ramen.png" alt="Korean Food">
+          <div class="card-body text-center">
+            <h5>Korea 🇰🇷</h5>
+            <p class="text-secondary">
+              Kimchi, ramen, BBQ and bold spicy tastes.
+            </p>
+            <a href="koren.html" class="btn btn-danger rounded-pill w-100">
+              Explore
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Italy -->
+      <div class="col-md-6 col-lg-3">
+        <div class="country-card card">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Italian Food">
+          <div class="card-body text-center">
+            <h5>Italy 🇮🇹</h5>
+            <p class="text-secondary">
+              Pizza, pasta and classic Italian comfort food.
+            </p>
+            <a href="italy.html" class="btn btn-danger rounded-pill w-100">
+              Explore
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<<div class="text-biryani">
+  <h2>Now it's time for the most famous and delicious food</h2>
+  <h3>Biryani</h3>
+</div>
+
+<!-- BIRYANI FEATURE SECTION -->
+<section class="biryani-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- TEXT CONTENT -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-bold mb-3">Biryani – The Heart of Pakistani Cuisine 🍛</h2>
+        <p class="text-muted">
+          Biryani is one of the most loved and iconic dishes of Pakistan.
+          It is enjoyed at breakfast, lunch, dinner, and even as a special snack.
+          The rich aroma of spices, tender meat, and flavorful rice makes biryani
+          a favorite comfort food for every food lover.
+        </p>
+        <p class="text-muted">
+          From street-side stalls to family dinners and weddings, biryani brings
+          people together with its unforgettable taste and vibrant colors.
+        </p>
+
+        <a href="biryani.html" class="btn btn-danger rounded-pill px-4 py-2 mt-3">
+          View Full Recipe
+        </a>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="col-lg-6 text-center">
+        <img
+          src="images/biryani.png"
+          alt="Biryani Dish"
+          class="img-fluid rounded-4 shadow biryani-img"
+        >
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ==============================ramadan======================================= -->
+<section class="ramadan-section">
+  <div class="stars"></div>
+
+  <div class="ramadan-container">
+
+    <div class="ramadan-text">
+      <h2 class="arabic">رمضان مبارک</h2>
+
+      <p class="urdu">
+        یہ مقدس مہینہ آپ کے گھر میں رحمتیں، برکتیں اور خوشیاں لے کر آئے۔
+        اللہ تعالیٰ آپ کی عبادات قبول فرمائے اور آپ کے دسترخوان کو
+        لذیذ اور محبت سے بھرپور افطار سے سجا دے۔
+      </p>
+
+      <p class="urdu">
+        اس بابرکت مہینے میں اپنے پیاروں کے ساتھ مزیدار اور خاص
+        رمضان ریسیپیز کا لطف اٹھائیں۔
+      </p>
+
+      <p class="english">
+        May this holy month bring peace, blessings, and delicious iftar
+        moments to your home. Explore our special Ramadan recipes
+        made with love.
+      </p>
+
+      <a href="ramadan.html" class="ramadan-btn">Explore Ramadan Recipes</a>
+    </div>
+
+    <div class="ramadan-moon"></div>
+
+  </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer class="main-footer text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- ABOUT -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">FlavorNest</h5>
+        <p class="text-secondary">
+          FlavorNest is your cozy place to explore delicious, homemade recipes
+          from Pakistan and around the world.
+        </p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">Popular Recipes</a></li>
+          <li><a href="#" class="footer-link">World Foods</a></li>
+          <li><a href="#" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- CREATOR -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Created By</h5>
+        <p class="text-secondary">
+          This website is designed and developed with ❤️ by <strong>HOORIZA JUNAID</strong>.
+        </p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <p class="text-center text-secondary mb-0">
+      © 2026 FlavorNest. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

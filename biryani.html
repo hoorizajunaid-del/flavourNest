@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biryani World | Ultimate Biryani Guide</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+       background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar */
+    nav {
+       background: #800000;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li {
+      transition: 0.3s;
+    }
+
+    nav ul li:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('images/biryani.png')center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      /* background: rgba(0,0,0,0.6); */
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    /* Section */
+    section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #6b0f1a;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    /* Recipe Card */
+    .recipe-card {
+      background: #fffefc;
+      border-left: 6px solid #b8860b;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .recipe-card h3 {
+      color: #800000;
+      margin-bottom: 0.5rem;
+    }
+
+    .recipe-card ul, .recipe-card ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #6b0f1a;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+      }
+
+    }
+    /* Navbar */
+nav {
+  background: #800000; /* deep maroon */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  transition: max-height 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    background: #800000;
+  }
+
+  nav ul.show {
+    max-height: 500px; /* enough to show all menu items */
+  }
+
+  nav ul li {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav>
+  <h1>   🍽️ FlavorNest </h1>
+  <ul>
+    <li><a href="#hyderabadi">Hyderabadi</a></li>
+    <li><a href="#sindhi">Sindhi</a></li>
+    <li><a href="#karachi">Karachi</a></li>
+    <li><a href="#kolkata">Kolkata</a></li>
+    <li><a href="#malabar">Malabar</a></li>
+    <li><a href="#beef">Beef</a></li>
+    <li><a href="#egg">Egg</a></li>
+    <li><a href="#fish">Fish</a></li>
+    <li><a href="#veg">Vegetable</a></li>
+    <li><a href="#mutton">Mutton</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h2>The Ultimate Biryani Guide</h2>
+  </div>
+
+  <!-- Types of Biryani -->
+  <section id="types">
+    <h2>Types of Biryani</h2>
+
+    <div class="recipe-card">
+      <h3>1. Hyderabadi Biryani</h3>
+      <p>Known for its aromatic spices, saffron, and layered cooking method. Usually made with marinated chicken or mutton.</p>
+    </div>
+
+    <div class="recipe-card">
+      <h3>2. Sindhi Biryani</h3>
+      <p>Spicy and tangy biryani with yogurt, tomatoes, and potatoes. Rich in flavors and often garnished with fried onions.</p>
+    </div>
+
+    <div class="recipe-card">
+      <h3>3. Karachi Biryani</h3>
+      <p>Famous for its deep red color and spicy taste. Includes potatoes and often a hint of vinegar for tanginess.</p>
+    </div>
+
+    <div class="recipe-card">
+      <h3>4. Bombay Biryani</h3>
+      <p>Aromatic and mildly spicy with potatoes and caramelized onions. Often served with raita.</p>
+    </div>
+
+    <div class="recipe-card">
+      <h3>5. Kolkata Biryani</h3>
+      <p>Mildly spiced with potatoes and boiled eggs. Less oily but rich in flavors and aroma.</p>
+    </div>
+
+    <div class="recipe-card">
+      <h3>6. Malabar Biryani</h3>
+      <p>Popular in Kerala, India. Uses short-grain rice, coconut milk, and fried onions with chicken or mutton.</p>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section id="recipes">
+    <h2>Classic Chicken Biryani Recipe</h2>
+
+    <div id="Classic Chicken Biryani Recipe" class="recipe-card">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>1 kg chicken (cut into pieces)</li>
+        <li>3 cups basmati rice</li>
+        <li>2 onions (thinly sliced)</li>
+        <li>1 cup yogurt</li>
+        <li>2 tbsp ginger garlic paste</li>
+        <li>2 tsp red chili powder</li>
+        <li>1 tsp turmeric powder</li>
+        <li>1 tsp garam masala powder</li>
+        <li>4–5 green chilies</li>
+        <li>1/2 cup fresh coriander & mint leaves</li>
+        <li>4 cups water</li>
+        <li>1/4 cup oil or ghee</li>
+        <li>Saffron soaked in milk (optional)</li>
+      </ul>
+
+      <h3>Method (Step by Step):</h3>
+      <ol>
+        <li>Wash basmati rice thoroughly and soak for 30 minutes.</li>
+        <li>Heat oil in a pan and fry onions until golden brown. Remove half for garnish.</li>
+        <li>Add ginger garlic paste and sauté for 1 minute.</li>
+        <li>Add chicken pieces and cook until lightly browned.</li>
+        <li>Add yogurt, red chili powder, turmeric, garam masala, salt, and green chilies. Cook 10–15 minutes.</li>
+        <li>Boil 4 cups water in a large pot. Add soaked rice and cook until 70% done. Drain water.</li>
+        <li>Layer partially cooked rice over chicken in a heavy-bottomed pot.</li>
+        <li>Sprinkle fried onions, mint, coriander, and saffron milk on top.</li>
+        <li>Cover tightly and cook on low flame for 25–30 minutes (dum cooking).</li>
+        <li>Turn off heat and let it rest for 10 minutes.</li>
+        <li>Gently fluff rice and serve hot with raita or salad.</li>
+      </ol>
+    </div>
+<div id="hyderabadi"    class="recipe-card">
+  <h3>Hyderabadi Chicken Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>1 kg chicken (cut into pieces)</li>
+    <li>3 cups basmati rice</li>
+    <li>2 onions (thinly sliced)</li>
+    <li>1 cup yogurt</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>2 tsp red chili powder</li>
+    <li>1 tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>4–5 green chilies</li>
+    <li>Saffron soaked in ¼ cup warm milk</li>
+    <li>Oil or ghee – ½ cup</li>
+  </ul>
+
+  <h4>Method (Step by Step):</h4>
+  <ol>
+    <li>Fry onions in oil until golden brown. Set aside half for garnish.</li>
+    <li>Mix chicken with yogurt, spices, green chilies, and half of fried onions. Marinate 1 hour.</li>
+    <li>Boil rice until 70% cooked. Drain water.</li>
+    <li>Layer chicken in a heavy-bottomed pot, add rice on top.</li>
+    <li>Sprinkle remaining fried onions, mint, coriander, saffron milk, and ghee.</li>
+    <li>Cover tightly and cook on low flame (dum) for 30–35 minutes.</li>
+    <li>Rest 10 minutes, gently fluff, serve hot with raita.</li>
+  </ol>
+</div>
+<div id="sidhi"    class="recipe-card">
+  <h3>Sindhi Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>1 kg chicken or mutton</li>
+    <li>3 cups basmati rice</li>
+    <li>2 onions (sliced)</li>
+    <li>1 cup yogurt</li>
+    <li>2 tomatoes (chopped)</li>
+    <li>2 potatoes (cubed)</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>2 tsp red chili powder</li>
+    <li>1 tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>Oil – ½ cup</li>
+  </ul>
+
+  <h4>Method:</h4>
+  <ol>
+    <li>Fry onions in oil until golden. Keep half for garnish.</li>
+    <li>Add chicken/mutton, ginger garlic paste, and spices. Cook 10–15 minutes.</li>
+    <li>Add tomatoes and potatoes, cook until tender.</li>
+    <li>Boil rice until 70% done. Drain water.</li>
+    <li>Layer meat & potatoes in pot, then rice on top.</li>
+    <li>Sprinkle fried onions, mint, coriander, and ghee.</li>
+    <li>Cook on low flame (dum) 30–35 minutes.</li>
+    <li>Serve hot with salad or raita.</li>
+  </ol>
+</div>
+
+<div id="karachi"   class="recipe-card">
+  <h3>Karachi Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>1 kg chicken</li>
+    <li>3 cups basmati rice</li>
+    <li>2 onions (sliced)</li>
+    <li>2 potatoes (cubed)</li>
+    <li>1 cup yogurt</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>2 tsp red chili powder</li>
+    <li>1 tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>1–2 tbsp vinegar (optional, for tang)</li>
+    <li>Oil – ½ cup</li>
+  </ul>
+
+  <h4>Method:</h4>
+  <ol>
+    <li>Fry onions until golden brown. Set aside half for garnish.</li>
+    <li>Add chicken, potatoes, ginger garlic paste, and spices. Cook 10 minutes.</li>
+    <li>Add yogurt and vinegar, simmer until chicken is tender.</li>
+    <li>Boil rice until 70% done. Drain water.</li>
+    <li>Layer chicken & potatoes, then rice on top.</li>
+    <li>Sprinkle fried onions, mint, coriander, ghee.</li>
+    <li>Dum cook on low heat 25–30 minutes.</li>
+    <li>Serve hot with raita or salad.</li>
+  </ol>
+</div>
+<div id="kolkata"  class="recipe-card">
+  <h3>Kolkata Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>1 kg chicken or mutton</li>
+    <li>3 cups basmati rice</li>
+    <li>2 onions (fried)</li>
+    <li>1 cup yogurt</li>
+    <li>2 boiled eggs</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>1 tsp red chili powder</li>
+    <li>½ tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>Oil – ½ cup</li>
+  </ul>
+
+  <h4>Method:</h4>
+  <ol>
+    <li>Fry onions until golden brown. Keep half for garnish.</li>
+    <li>Mix chicken with yogurt, spices, and half of fried onions. Marinate 1 hour.</li>
+    <li>Boil rice until 70% cooked. Drain water.</li>
+    <li>Layer chicken in pot, then rice on top.</li>
+    <li>Sprinkle remaining onions, mint, coriander, and ghee.</li>
+    <li>Place boiled eggs on top.</li>
+    <li>Cook on low flame (dum) for 25–30 minutes.</li>
+    <li>Serve hot with raita.</li>
+  </ol>
+</div>
+<div id="malabar"  class="recipe-card">
+  <h3>Malabar Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>1 kg chicken or mutton</li>
+    <li>3 cups short-grain rice (Jeerakasala rice)</li>
+    <li>2 onions (sliced)</li>
+    <li>1 cup yogurt</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>2 tsp red chili powder</li>
+    <li>½ tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup coconut milk</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>Oil – ½ cup</li>
+  </ul>
+
+  <h4>Method:</h4>
+  <ol>
+    <li>Fry onions in oil until golden. Keep half for garnish.</li>
+    <li>Mix chicken with yogurt, spices, and half fried onions. Marinate 30–60 minutes.</li>
+    <li>Boil rice until 70% done. Drain water.</li>
+    <li>Layer chicken in heavy-bottomed pot, then rice on top.</li>
+    <li>Pour coconut milk over rice. Sprinkle remaining onions, mint, coriander.</li>
+    <li>Cover tightly and cook on low flame (dum) 25–30 minutes.</li>
+    <li>Serve hot with raita or salad.</li>
+  </ol>
+</div>
+<div id="beef"  class="recipe-card">
+  <h3>Beef Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>1 kg beef (cut into cubes)</li>
+    <li>3 cups basmati rice</li>
+    <li>2 onions (sliced)</li>
+    <li>1 cup yogurt</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>2 tsp red chili powder</li>
+    <li>1 tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>4–5 green chilies</li>
+    <li>Oil or ghee – ½ cup</li>
+    <li>Saffron soaked in milk (optional)</li>
+  </ul>
+
+  <h4>Method:</h4>
+  <ol>
+    <li>Fry onions until golden brown. Keep half for garnish.</li>
+    <li>Marinate beef with yogurt, spices, and half fried onions for 1–2 hours.</li>
+    <li>Boil rice until 70% done. Drain water.</li>
+    <li>Layer beef in a heavy-bottomed pot, then rice on top.</li>
+    <li>Sprinkle remaining fried onions, mint, coriander, saffron milk, and ghee.</li>
+    <li>Cover tightly and cook on low flame (dum) 40–50 minutes until beef is tender.</li>
+    <li>Serve hot with raita or salad.</li>
+  </ol>
+</div>
+<div id="egg" class="recipe-card">
+  <h3>Egg Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>6 boiled eggs</li>
+    <li>3 cups basmati rice</li>
+    <li>2 onions (sliced)</li>
+    <li>1 cup yogurt</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>2 tsp red chili powder</li>
+    <li>½ tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>Oil or ghee – ½ cup</li>
+    <li>Saffron soaked in milk (optional)</li>
+  </ul>
+
+  <h4>Method:</h4>
+  <ol>
+    <li>Fry onions until golden. Keep half for garnish.</li>
+    <li>Mix yogurt, spices, and half fried onions in a bowl.</li>
+    <li>Boil rice until 70% cooked. Drain water.</li>
+    <li>Layer marinated yogurt mixture and then rice in a pot.</li>
+    <li>Place boiled eggs on top. Sprinkle remaining fried onions, mint, coriander, saffron milk, and ghee.</li>
+    <li>Cook on low flame (dum) 20–25 minutes.</li>
+    <li>Serve hot with raita or salad.</li>
+  </ol>
+</div>
+<div id="fish" class="recipe-card">
+  <h3>Fish Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>500g fish fillets (boneless)</li>
+    <li>3 cups basmati rice</li>
+    <li>2 onions (sliced)</li>
+    <li>1 cup yogurt</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>2 tsp red chili powder</li>
+    <li>½ tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>Oil – ½ cup</li>
+    <li>Lemon juice 1 tbsp</li>
+    <li>Saffron soaked in milk (optional)</li>
+  </ul>
+
+  <h4>Method:</h4>
+  <ol>
+    <li>Fry onions until golden. Keep half for garnish.</li>
+    <li>Marinate fish with yogurt, spices, lemon juice, and half fried onions for 15–20 minutes.</li>
+    <li>Boil rice until 70% cooked. Drain water.</li>
+    <li>Layer marinated fish in a pot, then rice on top.</li>
+    <li>Sprinkle fried onions, mint, coriander, saffron milk, and ghee.</li>
+    <li>Cook on low flame (dum) 15–20 minutes (fish cooks faster than meat).</li>
+    <li>Serve hot with salad or raita.</li>
+  </ol>
+</div>
+<div id="vegetable" class="recipe-card">
+  <h3>Vegetable Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>1 cup carrots (chopped)</li>
+    <li>1 cup beans (chopped)</li>
+    <li>1 cup peas</li>
+    <li>2 potatoes (cubed)</li>
+    <li>3 cups basmati rice</li>
+    <li>2 onions (sliced)</li>
+    <li>1 cup yogurt</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>2 tsp red chili powder</li>
+    <li>½ tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>Oil or ghee – ½ cup</li>
+  </ul>
+
+  <h4>Method:</h4>
+  <ol>
+    <li>Fry onions until golden. Keep half for garnish.</li>
+    <li>Cook all vegetables lightly in oil with ginger garlic paste and spices.</li>
+    <li>Boil rice until 70% done. Drain water.</li>
+    <li>Layer vegetables in pot, then rice on top.</li>
+    <li>Sprinkle fried onions, mint, coriander, saffron milk (optional), and ghee.</li>
+    <li>Cook on low flame (dum) 20–25 minutes.</li>
+    <li>Serve hot with raita or salad.</li>
+  </ol>
+</div>
+<div id="mutton" class="recipe-card">
+  <h3>Mutton Biryani</h3>
+
+  <h4>Ingredients:</h4>
+  <ul>
+    <li>1 kg mutton</li>
+    <li>3 cups basmati rice</li>
+    <li>2 onions (sliced)</li>
+    <li>1 cup yogurt</li>
+    <li>2 tbsp ginger garlic paste</li>
+    <li>2 tsp red chili powder</li>
+    <li>1 tsp turmeric powder</li>
+    <li>1 tsp garam masala</li>
+    <li>½ cup mint & coriander leaves</li>
+    <li>4–5 green chilies</li>
+    <li>Oil or ghee – ½ cup</li>
+    <li>Saffron soaked in milk (optional)</li>
+  </ul>
+
+  <h4>Method:</h4>
+  <ol>
+    <li>Fry onions until golden brown. Keep half for garnish.</li>
+    <li>Marinate mutton with yogurt, spices, half fried onions for 1–2 hours.</li>
+    <li>Boil rice until 70% cooked. Drain water.</li>
+    <li>Layer mutton in pot, then rice on top.</li>
+    <li>Sprinkle fried onions, mint, coriander, saffron milk, and ghee.</li>
+    <li>Cook on low flame (dum) 40–50 minutes until mutton is tender.</li>
+    <li>Serve hot with raita, salad, or pickle.</li>
+  </ol>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Biryani World | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
